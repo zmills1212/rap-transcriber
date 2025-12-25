@@ -1,0 +1,53 @@
+# ===========================================
+# RAP TRANSCRIPTION SYSTEM - MAIN CONFIG
+# ===========================================
+
+project:
+  name: "rap-transcriber"
+  version: "0.1.0"
+
+# Audio Processing
+audio:
+  sample_rate: 16000
+  n_mels: 80
+  n_fft: 400
+  hop_length: 160
+  max_duration_sec: 30
+
+# Model Architecture
+model:
+  encoder:
+    type: "conformer"
+    dim: 512
+    layers: 12
+    heads: 8
+    dropout: 0.1
+  
+  phoneme_head:
+    vocab_size: 84
+    decoder_layers: 4
+  
+  text_head:
+    vocab_size: 8192
+    decoder_layers: 4
+
+# Training
+training:
+  batch_size: 8
+  learning_rate: 0.0001
+  warmup_steps: 5000
+  max_steps: 100000
+  grad_clip: 1.0
+  
+# Paths
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  lexicon: "data/lexicon"
+  checkpoints: "outputs/checkpoints"
+  logs: "outputs/logs"
+
+# Inference
+inference:
+  beam_size: 10
+  max_decode_length: 500
