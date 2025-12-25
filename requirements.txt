@@ -1,0 +1,34 @@
+# Core ML
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.30.0
+datasets>=2.14.0
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0
+
+# NLP & Text
+sentencepiece>=0.1.99
+g2p-en>=2.1.0
+editdistance>=0.6.0
+
+# Data & Utils
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+tqdm>=4.65.0
+pyyaml>=6.0
+
+# Experiment tracking
+wandb>=0.15.0
+
+# API & Serving (for later)
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Development
+jupyter>=1.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
