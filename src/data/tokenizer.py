@@ -205,18 +205,19 @@ class RapTokenizer(SimpleTokenizer):
         # Common rap-specific tokens to always include
         self.rap_tokens = [
             # Ad-libs
-            "yeah", "yuh", "uh", "ay", "ayy", "skrt", "brr",
+            "yeah", "yuh", "yah", "uh", "ay", "ayy", "skrt", "brr",
             "woo", "sheesh", "gang", "aye",
             # Common slang
             "finna", "gonna", "wanna", "gotta", "tryna", "ima", "imma",
             "ion", "aint", "ain't", "bout", "'bout",
             "bussin", "fire", "lit", "dope", "sick",
-            "cap", "facts", "bet", "lowkey", "highkey",
+            "cap", "facts", "bet", "lowkey", "highkey","deadhomies"
             # People
             "homie", "dawg", "bruh", "fam", "bro", "sis",
             "plug", "opps",
             # Money
-            "bread", "bands", "guap", "racks", "stacks",
+            "bread", "bands", "guap", "racks", "stacks","chip",
+            "cheddar","cheese",
             # Style
             "drip", "flex", "swag", "ice",
             # Common words
