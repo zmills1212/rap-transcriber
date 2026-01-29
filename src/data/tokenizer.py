@@ -248,6 +248,8 @@ class RapTokenizer(SimpleTokenizer):
             "f**k": "fuck",
             "s**t": "shit",
             "b***h": "bitch",
+            "a**": "ass",
+            "p***y": "pussy",
         }
         for old, new in replacements.items():
             text = text.replace(old, new)
