@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-01-30T19:13:17.813213",
+  "device": "mps",
+  "checkpoint": null,
+  "memory": {
+    "model_parameters": 85284436,
+    "model_size_mb": 325.3343048095703
+  },
+  "speed": {
+    "5s audio": {
+      "avg_time_ms": 14.76410800000001,
+      "min_time_ms": 5.256790999999872,
+      "max_time_ms": 29.484542000000058,
+      "rtf": 0.0029528216000000015,
+      "faster_than_realtime": true
+    },
+    "10s audio": {
+      "avg_time_ms": 38.427250199999996,
+      "min_time_ms": 5.639334000000051,
+      "max_time_ms": 59.25391699999993,
+      "rtf": 0.00384272502,
+      "faster_than_realtime": true
+    },
+    "30s audio": {
+      "avg_time_ms": 138.83499159999994,
+      "min_time_ms": 7.031041999999932,
+      "max_time_ms": 185.45875,
+      "rtf": 0.004627833053333331,
+      "faster_than_realtime": true
+    }
+  },
+  "feature_extraction": {
+    "5s audio": {
+      "avg_time_ms": 1.5140832000001048
+    },
+    "10s audio": {
+      "avg_time_ms": 0.6380165999999576
+    },
+    "30s audio": {
+      "avg_time_ms": 1.7681915999999909
+    }
+  },
+  "accuracy": {
+    "wer": 0.23076923076923078,
+    "cer": 0.08264462809917356,
+    "word_accuracy": 0.7692307692307692,
+    "slang_recall": 0.45454545454545453,
+    "slang_f1": 0.5555555555555556,
+    "test_samples": 5,
+    "note": "Synthetic test data - train model for real accuracy"
+  }
+}
