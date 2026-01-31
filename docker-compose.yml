@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  rap-transcriber:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rap-transcriber-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount data directories for persistence
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      # Mount model checkpoints
+      - ./outputs/checkpoints:/app/outputs/checkpoints
+    environment:
+      - PYTORCH_ENABLE_MPS_FALLBACK=1
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Optional: Development version with auto-reload
+  rap-transcriber-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rap-transcriber-dev
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./src:/app/src
+      - ./scripts:/app/scripts
+      - ./configs:/app/configs
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    environment:
+      - PYTORCH_ENABLE_MPS_FALLBACK=1
+      - PYTHONUNBUFFERED=1
+    command: ["python", "scripts/run_api.py", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    profiles:
+      - dev
