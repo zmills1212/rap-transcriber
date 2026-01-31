@@ -343,3 +343,11 @@ async def shutdown_event():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
+# ============== WebSocket Support ==============
+
+from src.api.websocket import add_websocket_routes
+
+# Add WebSocket routes
+add_websocket_routes(app)
