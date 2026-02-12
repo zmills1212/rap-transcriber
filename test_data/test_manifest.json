@@ -1,0 +1,32 @@
+{
+  "description": "Rap transcription evaluation test manifest.",
+  "instructions": "For each test case: place the audio file in test_data/audio/ and the ground truth lyrics in test_data/ground_truth/ (plain text).",
+  "samples": [
+    {
+      "id": "sample_001",
+      "audio_file": "audio/sample_001.mp3",
+      "ground_truth_file": "ground_truth/sample_001.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "Niggas Be Lame",
+        "genre_tags": ["hip-hop", "trap"],
+        "bpm_estimate": null,
+        "duration_seconds": 46
+      },
+      "challenge_tags": ["heavy_slang", "ad_libs", "accent_dialect"],
+      "notes": "Atlanta trap style, AAVE, ad-libs throughout"
+    }
+  ],
+  "challenge_tag_definitions": {
+    "fast_flow": "Rapid-fire delivery, 4+ syllables/second",
+    "mumble": "Intentionally slurred or mumbled delivery style",
+    "heavy_slang": "Dense use of slang, regional dialect, or AAVE",
+    "ad_libs": "Frequent ad-libs, ad-lib-heavy sections (e.g. 'skrt', 'yeah', 'aye')",
+    "autotune": "Heavy vocal processing or autotune",
+    "loud_beat": "Beat/instrumental competing with vocals",
+    "multi_voice": "Multiple rappers, overlapping voices",
+    "accent_dialect": "Strong regional accent (Southern, NY, UK drill, etc.)",
+    "singing_melodic": "Melodic rap / singing-rapping hybrid",
+    "wordplay": "Dense double entendres, homophones, or unusual word usage"
+  }
+}
