@@ -34,3 +34,13 @@ evaluation/reports/*.json
 
 # Backup
 training/backup_*/
+
+# Old processed data
+data/processed/
+data/raw/segments/
+
+# Old logs
+outputs/logs/
+
+# Backup files
+*.bak
