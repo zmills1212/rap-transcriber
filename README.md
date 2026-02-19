@@ -53,7 +53,6 @@ python rap_transcribe.py song.mp3 --lyrics reference.txt --json
 OpenAI's Whisper (small.en, 244M params) provides the raw transcription. It handles general English well but consistently misinterprets rap-specific language:
 
 - `"bands"` → `"pants"` (slang misidentification)
-- `"all these hoes gon' flock"` → `"how do you hug and fly"` (complete hallucination)
 - `"doin' my thang"` → `"doing my thing"` (dialect normalization)
 
 ### Stage 2: Rap Post-Processor
