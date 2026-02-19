@@ -1,254 +1,188 @@
-# 🎤 Rap Transcription System
+# 🎤 Rap Transcriber
 
-**AI-powered transcription for rap music with slang recognition**
+**AI-powered lyric transcription for rap music — built to handle slang, dialect, and fast delivery where standard speech-to-text fails.**
 
-A production-grade Automatic Speech Recognition (ASR) system specifically designed for transcribing rap music, featuring:
+Existing tools like Genius rely on user-submitted lyrics that are often inaccurate or missing entirely. Standard ASR models (trained on news anchors and podcasts) consistently fail on rap's linguistic complexity — AAVE dialect, regional slang, rapid-fire delivery, heavy ad-libs, and dense vocal mixing.
 
-- 🧠 **85M parameter Conformer encoder** with dual prediction heads
-- 🎯 **Slang-aware transcription** with custom rap vocabulary
-- ⚡ **Real-time inference** faster than real-time on GPU/MPS
-- 🌐 **REST API & WebSocket** for easy integration
-- 🐳 **Docker ready** for deployment
+This system solves that with a three-stage pipeline:
+
+```
+Audio → Whisper → Post-Processor → Lyrics Matcher → Accurate Transcription
+```
+
+**Each stage measurably improves accuracy:**
+
+| Stage | WER | Improvement |
+|-------|-----|-------------|
+| Whisper (baseline) | 42.6% | — |
+| + Post-Processor | 35.5% | -7.1% |
+| + Lyrics Matcher | 1.9% | -33.6% |
+
+> *Benchmarked on rap samples with heavy slang, dialect, and ad-libs*
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### Installation
 ```bash
-# Clone the repository
-git clone <your-repo-url>
+# Setup
+git clone https://github.com/zmills1212/rap-transcriber.git
 cd rap-transcriber
-
-# Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-pip install python-multipart
+
+# Transcribe with reference lyrics (highest accuracy)
+python rap_transcribe.py song.mp3 --lyrics reference.txt -v
+
+# Transcribe without reference (Whisper + post-processing)
+python rap_transcribe.py song.mp3 -v
+
+# Save output
+python rap_transcribe.py song.mp3 --lyrics reference.txt -o output.txt
+
+# JSON output for integration
+python rap_transcribe.py song.mp3 --lyrics reference.txt --json
 ```
-
-### Transcribe Audio
-```bash
-# Using the CLI
-python scripts/transcribe.py your_audio.mp3
-
-# With lyrics formatting
-python scripts/transcribe.py your_audio.mp3 --format-lyrics
-
-# Save to file
-python scripts/transcribe.py your_audio.mp3 --output transcript.txt
-```
-
-### Start the API Server
-```bash
-python scripts/run_api.py
-```
-
-Then visit: http://localhost:8000/docs
 
 ---
 
-## 📁 Project Structure
+## How It Works
+
+### Stage 1: Whisper ASR
+OpenAI's Whisper (small.en, 244M params) provides the raw transcription. It handles general English well but consistently misinterprets rap-specific language:
+
+- `"bands"` → `"pants"` (slang misidentification)
+- `"all these hoes gon' flock"` → `"how do you hug and fly"` (complete hallucination)
+- `"doin' my thang"` → `"doing my thing"` (dialect normalization)
+
+### Stage 2: Rap Post-Processor
+150+ rule-based corrections targeting predictable Whisper errors:
+
+- **Slang recovery:** Restores rap vocabulary Whisper normalizes away
+- **Dialect preservation:** `doing` → `doin'`, `thing` → `thang`, `lying` → `lyin'`
+- **Ad-lib recognition:** Identifies and preserves rap ad-libs (ayy, skrrt, etc.)
+- **Context-aware phrases:** Multi-word corrections using surrounding context
+
+### Stage 3: Lyrics Matcher
+When reference lyrics are available, the matcher aligns Whisper's output against the known text using:
+
+- **Sequence alignment** (Needleman-Wunsch variant via `difflib`)
+- **Phonetic matching** with rap/AAVE equivalence tables (`bands`↔`pants`, `dat`↔`that`, `thang`↔`thing`)
+- **Edit distance scoring** (Levenshtein) for unknown word pairs
+- **Per-word confidence scoring** — high when Whisper and reference agree, low when the matcher had to guess
+
+---
+
+## Pipeline Architecture
+
+```
+┌─────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   Audio In  │────▶│  Whisper ASR     │────▶│  Post-Processor │
+│  (.mp3/.wav)│     │  (small.en 244M) │     │  (150+ rules)   │
+└─────────────┘     └──────────────────┘     └────────┬────────┘
+                                                       │
+                                                       ▼
+                    ┌──────────────────┐     ┌─────────────────┐
+                    │  Final Output    │◀────│  Lyrics Matcher │
+                    │  + Confidence    │     │  (if ref avail) │
+                    └──────────────────┘     └─────────────────┘
+```
+
+---
+
+## Project Structure
+
 ```
 rap-transcriber/
-├── src/
-│   ├── models/           # Neural network architecture
-│   │   ├── encoder.py    # Conformer encoder (75M params)
-│   │   ├── phoneme_head.py   # Phoneme prediction head
-│   │   ├── text_head.py      # Text prediction head
-│   │   └── rap_transcriber.py # Main model wrapper
-│   │
-│   ├── data/             # Data processing
-│   │   ├── audio_processor.py    # Audio loading & preprocessing
-│   │   ├── feature_extractor.py  # Mel spectrogram extraction
-│   │   ├── dataset.py            # PyTorch dataset classes
-│   │   ├── tokenizer.py          # Text tokenization
-│   │   ├── slang_lexicon.py      # Rap slang dictionary
-│   │   └── manifest.py           # Data manifest management
-│   │
-│   ├── training/         # Training pipeline
-│   │   ├── trainer.py    # Training loop
-│   │   └── optimizer.py  # Optimizer & schedulers
-│   │
-│   ├── inference/        # Inference pipeline
-│   │   ├── engine.py     # Inference engine
-│   │   ├── decoder.py    # Beam search decoder
-│   │   └── postprocessor.py  # Text cleanup
-│   │
-│   ├── api/              # REST API
-│   │   ├── server.py     # FastAPI server
-│   │   ├── client.py     # API client
-│   │   └── websocket.py  # WebSocket streaming
-│   │
-│   └── utils/            # Utilities
-│       ├── config.py     # Configuration loader
-│       ├── metrics.py    # WER/CER metrics
-│       └── slang_metrics.py  # Slang accuracy
-│
-├── scripts/              # Executable scripts
-│   ├── train.py          # Training script
-│   ├── transcribe.py     # Transcription CLI
-│   ├── evaluate.py       # Evaluation script
-│   ├── benchmark.py      # Performance benchmarks
-│   └── run_api.py        # API server launcher
-│
-├── configs/              # Configuration files
-│   └── config.yaml       # Main config
-│
-├── data/                 # Data directories
-│   ├── raw/              # Raw audio files
-│   ├── processed/        # Processed manifests
-│   └── lexicon/          # Slang lexicon
-│
-└── outputs/              # Output directories
-    ├── checkpoints/      # Model checkpoints
-    ├── logs/             # Training logs
-    └── results/          # Evaluation results
+├── rap_transcribe.py          # Unified CLI — main entry point
+├── lyrics_matcher/            # Phase A: Lyrics alignment engine
+│   ├── lyrics_matcher.py      #   Core matching algorithm
+│   └── pipeline_eval.py       #   Full pipeline benchmarking
+├── postprocessor/             # Rap-specific text correction
+│   ├── rap_postprocessor.py   #   150+ correction rules
+│   └── eval_postprocessor.py  #   Post-processor benchmarking
+├── training/                  # Phase B: Whisper fine-tuning
+│   ├── fine_tune.py           #   LoRA fine-tuning on Apple Silicon
+│   ├── augment_audio.py       #   Data augmentation pipeline
+│   ├── prepare_dataset.py     #   Dataset preparation
+│   └── data_collector.py      #   Training data collection CLI
+├── evaluation/                # WER evaluation framework
+│   └── evaluate.py            #   Systematic error analysis
+├── training_data/             # Curated rap audio + transcripts
+│   ├── manifest.json          #   51 samples with challenge tags
+│   └── transcripts/           #   Ground truth lyrics
+└── test_data/                 # Held-out evaluation samples
 ```
 
 ---
 
-## 🏋️ Training
+## Training Pipeline (Phase B)
 
-### Prepare Data
+Fine-tuning Whisper on rap-specific data using LoRA (Low-Rank Adaptation):
 
-1. Place audio files in `data/raw/`
-2. Create matching text files (same name, `.txt` extension)
-3. Run data preparation:
 ```bash
-python scripts/prepare_data.py --audio-dir data/raw --output-dir data/processed
+# Collect training data
+python -m training.data_collector add \
+    --audio song.mp4 --lyrics lyrics.txt \
+    --artist "Artist" --song "Song" \
+    --tags heavy_slang fast_flow
+
+# Generate augmented training data (7 variants per sample)
+python -m training.augment_audio
+
+# Prepare HuggingFace dataset
+python -m training.prepare_dataset
+
+# Fine-tune with regularization + early stopping
+python -m training.fine_tune
 ```
 
-### Train the Model
+**Training details:**
+- 51 base samples → 408 via augmentation (speed, pitch, noise perturbation)
+- LoRA rank 8 on attention layers (884K trainable params / 0.36%)
+- Weight decay 0.05, cosine LR schedule, early stopping (patience 3)
+- Optimized for M1 MacBook Pro 16GB (MPS backend)
+
+**Data categories:** heavy slang, fast flow, melodic/autotune, mumble, ad-libs, accent/dialect, clean delivery, loud beats
+
+---
+
+## Evaluation
+
 ```bash
-# Debug mode (quick test)
-PYTORCH_ENABLE_MPS_FALLBACK=1 python scripts/train.py --debug --epochs 2
+# Batch evaluation on all test samples
+python -m lyrics_matcher.pipeline_eval --batch
 
-# Full training
-PYTORCH_ENABLE_MPS_FALLBACK=1 python scripts/train.py --epochs 100
-```
-
-### Evaluate
-```bash
-python scripts/evaluate.py --checkpoint outputs/checkpoints/best.pt
+# Evaluate post-processor independently
+python -m postprocessor.eval_postprocessor
 ```
 
 ---
 
-## 🌐 API Reference
+## Technical Stack
 
-### REST Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | API info |
-| `/health` | GET | Health check |
-| `/transcribe` | POST | Transcribe audio file |
-| `/transcribe/async` | POST | Start async transcription |
-| `/job/{job_id}` | GET | Get async job status |
-| `/format` | POST | Format/clean text |
-
-### WebSocket
-
-Connect to `/ws/transcribe` for streaming transcription.
-
-### Example Usage
-```python
-from src.api.client import TranscriptionClient
-
-client = TranscriptionClient("http://localhost:8000")
-
-# Transcribe
-result = client.transcribe("audio.mp3")
-print(result['text'])
-
-# Format text
-formatted = client.format_text(
-    "i'm finna get bread",
-    normalize_slang=True
-)
-```
+- **ASR:** OpenAI Whisper (small.en) via `openai-whisper`
+- **Fine-tuning:** HuggingFace Transformers + PEFT (LoRA)
+- **Audio processing:** librosa, soundfile
+- **Evaluation:** `jiwer` (WER), custom error categorization
+- **Runtime:** Python 3.9+, PyTorch 2.8, Apple Silicon MPS
 
 ---
 
-## 🐳 Docker
-
-### Build & Run
-```bash
-# Build image
-docker build -t rap-transcriber .
-
-# Run container
-docker run -p 8000:8000 rap-transcriber
-
-# Or use Docker Compose
-docker-compose up -d
-```
-
----
-
-## 📊 Model Architecture
-```
-Input Audio
-    ↓
-[Mel Spectrogram] (80 bins)
-    ↓
-[Conv Subsampling] (4x reduction)
-    ↓
-[Conformer Encoder] (12 layers, 512 dim, 8 heads)
-    ↓
-    ├──→ [Phoneme Head] → ARPAbet phonemes
-    │
-    └──→ [Text Head] → BPE tokens → Text
-```
-
-**Total Parameters:** ~85 million
-
----
-
-## 🎯 Slang Support
-
-The system includes a custom slang lexicon with 40+ rap terms:
-
-- **Ad-libs:** yeah, yuh, skrt, ayy, sheesh
-- **Slang verbs:** finna, tryna, bussin
-- **Slang nouns:** bread, bands, drip, cap
-- **Pronouns:** bruh, fam, dawg
-
----
-
-## 📈 Performance
-
-| Metric | Value |
-|--------|-------|
-| Parameters | 85M |
-| Inference (10s audio) | ~100ms |
-| Real-time Factor | < 0.1x |
-| Supported Formats | mp3, wav, flac, m4a |
-
----
-
-## 🛠️ Requirements
+## Requirements
 
 - Python 3.9+
-- PyTorch 2.0+
-- 16GB RAM recommended
-- GPU/MPS optional but recommended
+- 16GB RAM (for Whisper small model)
+- macOS with Apple Silicon recommended (MPS acceleration)
+- Works on CPU/CUDA as well
+
+```bash
+pip install openai-whisper torch transformers peft librosa jiwer evaluate
+```
 
 ---
 
-## 📄 License
+## License
 
-MIT License
-
----
-
-## 🙏 Acknowledgments
-
-Built with:
-- [PyTorch](https://pytorch.org/)
-- [torchaudio](https://pytorch.org/audio/)
-- [FastAPI](https://fastapi.tiangolo.com/)
-- [Conformer](https://arxiv.org/abs/2005.08100) architecture
+MIT
