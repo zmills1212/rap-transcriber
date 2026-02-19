@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "created_at": "2026-02-03T17:55:49.195109",
-  "sample_count": 36,
-  "total_duration_seconds": 1504.1200000000001,
-  "total_duration_minutes": 25.1,
-  "total_words": 5020,
+  "sample_count": 51,
+  "total_duration_seconds": 2115.35,
+  "total_duration_minutes": 35.3,
+  "total_words": 7314,
   "samples": [
     {
       "id": "train_82897b",
@@ -496,6 +496,217 @@
         "heavy_slang"
       ],
       "added_at": "2026-02-11T20:33:15.857838"
+    },
+    {
+      "id": "train_967a63",
+      "audio_file": "audio/train_967a63.wav",
+      "transcript_file": "transcripts/train_967a63.txt",
+      "artist": "6 Dogs",
+      "song": "Portals",
+      "duration_seconds": 37.78,
+      "word_count": 96,
+      "challenge_tags": [
+        "melodic",
+        "autotune"
+      ],
+      "added_at": "2026-02-12T02:51:59.764163"
+    },
+    {
+      "id": "train_a7fe0c",
+      "audio_file": "audio/train_a7fe0c.wav",
+      "transcript_file": "transcripts/train_a7fe0c.txt",
+      "artist": "Yung Bans",
+      "song": "Waterslide",
+      "duration_seconds": 47.34,
+      "word_count": 149,
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs"
+      ],
+      "added_at": "2026-02-12T03:06:47.233637"
+    },
+    {
+      "id": "train_bb94f8",
+      "audio_file": "audio/train_bb94f8.wav",
+      "transcript_file": "transcripts/train_bb94f8.txt",
+      "artist": "1Kay",
+      "song": "Score Gang",
+      "duration_seconds": 41.25,
+      "word_count": 185,
+      "challenge_tags": [
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-12T19:24:00.607904"
+    },
+    {
+      "id": "train_871a62",
+      "audio_file": "audio/train_871a62.wav",
+      "transcript_file": "transcripts/train_871a62.txt",
+      "artist": "Keece Money",
+      "song": "Being Me",
+      "duration_seconds": 57.04,
+      "word_count": 243,
+      "challenge_tags": [
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-12T19:39:40.629444"
+    },
+    {
+      "id": "train_d2c5aa",
+      "audio_file": "audio/train_d2c5aa.wav",
+      "transcript_file": "transcripts/train_d2c5aa.txt",
+      "artist": "Playboi Carti",
+      "song": "Mileage",
+      "duration_seconds": 44.65,
+      "word_count": 116,
+      "challenge_tags": [
+        "mumble",
+        "autotune",
+        "ad_libs",
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-12T19:49:57.246352"
+    },
+    {
+      "id": "train_7071f1",
+      "audio_file": "audio/train_7071f1.wav",
+      "transcript_file": "transcripts/train_7071f1.txt",
+      "artist": "Nebu Kiniza ft. Lil Yachty",
+      "song": "Wake Up",
+      "duration_seconds": 41.35,
+      "word_count": 157,
+      "challenge_tags": [
+        "melodic",
+        "autotune"
+      ],
+      "added_at": "2026-02-12T19:58:31.940513"
+    },
+    {
+      "id": "train_501438",
+      "audio_file": "audio/train_501438.wav",
+      "transcript_file": "transcripts/train_501438.txt",
+      "artist": "Swaghollywood ft. Famous Dex & Lil Yachty",
+      "song": "Li Moe Remix",
+      "duration_seconds": 40.09,
+      "word_count": 128,
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang",
+        "ad_libs"
+      ],
+      "added_at": "2026-02-12T20:07:16.893130"
+    },
+    {
+      "id": "train_5b0556",
+      "audio_file": "audio/train_5b0556.wav",
+      "transcript_file": "transcripts/train_5b0556.txt",
+      "artist": "K Suave",
+      "song": "Hurt Lol",
+      "duration_seconds": 39.26,
+      "word_count": 179,
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-12T20:19:20.768669"
+    },
+    {
+      "id": "train_4e51cc",
+      "audio_file": "audio/train_4e51cc.wav",
+      "transcript_file": "transcripts/train_4e51cc.txt",
+      "artist": "KanKan",
+      "song": "A Whole Year Later",
+      "duration_seconds": 35.06,
+      "word_count": 104,
+      "challenge_tags": [
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-12T20:44:48.259557"
+    },
+    {
+      "id": "train_7d9a4a",
+      "audio_file": "audio/train_7d9a4a.wav",
+      "transcript_file": "transcripts/train_7d9a4a.txt",
+      "artist": "Bally",
+      "song": "No Mask",
+      "duration_seconds": 28.76,
+      "word_count": 132,
+      "challenge_tags": [
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-15T20:30:59.080575"
+    },
+    {
+      "id": "train_e20cc9",
+      "audio_file": "audio/train_e20cc9.wav",
+      "transcript_file": "transcripts/train_e20cc9.txt",
+      "artist": "Lil Yachty",
+      "song": "Act T (Unreleased Snippet)",
+      "duration_seconds": 18.01,
+      "word_count": 50,
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-16T19:22:46.113818"
+    },
+    {
+      "id": "train_f95a1d",
+      "audio_file": "audio/train_f95a1d.wav",
+      "transcript_file": "transcripts/train_f95a1d.txt",
+      "artist": "Yung Gwopp ft. Yeat",
+      "song": "banKroLL",
+      "duration_seconds": 40.7,
+      "word_count": 155,
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "autotune"
+      ],
+      "added_at": "2026-02-16T19:31:10.619159"
+    },
+    {
+      "id": "train_5b4d6e",
+      "audio_file": "audio/train_5b4d6e.wav",
+      "transcript_file": "transcripts/train_5b4d6e.txt",
+      "artist": "Yeat",
+      "song": "Rollin",
+      "duration_seconds": 45.75,
+      "word_count": 216,
+      "challenge_tags": [
+        "mumble",
+        "autotune",
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-16T19:41:37.602081"
+    },
+    {
+      "id": "train_b2da89",
+      "audio_file": "audio/train_b2da89.wav",
+      "transcript_file": "transcripts/train_b2da89.txt",
+      "artist": "Yeat",
+      "song": "Sick",
+      "duration_seconds": 52.43,
+      "word_count": 211,
+      "challenge_tags": [
+        "mumble",
+        "autotune",
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-16T19:49:08.722563"
+    },
+    {
+      "id": "train_366a7a",
+      "audio_file": "audio/train_366a7a.wav",
+      "transcript_file": "transcripts/train_366a7a.txt",
+      "artist": "Bally",
+      "song": "Monopoly",
+      "duration_seconds": 41.76,
+      "word_count": 173,
+      "challenge_tags": [
+        "heavy_slang"
+      ],
+      "added_at": "2026-02-16T20:00:33.474444"
     }
   ]
 }

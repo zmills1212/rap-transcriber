@@ -1,43 +1,36 @@
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-.env
-.venv
-env/
+*.pyc
+*.pyo
 venv/
-ENV/
+.venv/
+*.egg-info/
 
-# Data (too large for git)
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-
-# Model outputs
-outputs/checkpoints/*
-outputs/logs/*
-!outputs/checkpoints/.gitkeep
-!outputs/logs/.gitkeep
+# Model artifacts (too large for git)
+training/fine_tuned/
+training/hf_dataset/
+training_data/augmented_audio/
+training_data/augmented_manifest.json
+*.safetensors
+*.bin
 *.pt
 *.pth
-*.onnx
-*.bin
 
-# Jupyter
-.ipynb_checkpoints/
+# Audio files (too large)
+training_data/audio/
+test_data/audio/
+*.wav
+*.mp3
+*.mp4
+*.flac
 
-# IDE
+# IDE / OS
 .vscode/
-.idea/
+.DS_Store
 *.swp
 
-# OS
-.DS_Store
-Thumbs.db
+# Outputs / Reports
+evaluation/reports/*.json
 
-# Secrets
-*.env
-secrets.yaml
+# Backup
+training/backup_*/
