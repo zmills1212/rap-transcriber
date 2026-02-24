@@ -110,9 +110,33 @@ def compute_wer(hyp: str, ref: str) -> float:
 # Main Pipeline
 # =============================================================================
 
+def fetch_genius_lyrics(song_title: str, artist: str = None) -> str:
+    """Fetch lyrics from Genius API."""
+    try:
+        from lyrics_matcher.genius import GeniusClient
+        genius = GeniusClient()
+        print(f"\n  🔍 Searching Genius for: {artist + ' - ' if artist else ''}{song_title}")
+        lyrics = genius.fetch_lyrics(song_title, artist=artist)
+        if lyrics:
+            word_count = len(lyrics.split())
+            print(f"  ✓ Fetched {word_count} words of lyrics")
+            return lyrics
+        else:
+            print(f"  ✗ No lyrics found on Genius")
+            return ""
+    except ValueError as e:
+        print(f"  ERROR: {e}")
+        return ""
+    except Exception as e:
+        print(f"  ERROR fetching from Genius: {e}")
+        return ""
+
+
 def run_transcription(
     audio_path: str,
     lyrics_path: str = None,
+    song_title: str = None,
+    artist: str = None,
     model_size: str = "small",
     output_path: str = None,
     verbose: bool = False,
@@ -132,6 +156,9 @@ def run_transcription(
             print(f"ERROR: Lyrics file not found: {lyrics_path}")
             sys.exit(1)
         reference = lp.read_text(encoding="utf-8").strip()
+    elif song_title:
+        # Auto-fetch from Genius
+        reference = fetch_genius_lyrics(song_title, artist=artist)
 
     results = {"audio": str(audio_file.name), "stages": {}}
 
@@ -202,7 +229,7 @@ def run_transcription(
             print(f"  Improvement:  {wer['whisper'] - wer['final']:.1%} WER reduction")
 
         if not reference:
-            print(f"  💡 Tip: Add --lyrics <file> for higher accuracy")
+            print(f"  💡 Tip: Add --song 'Title' -a 'Artist' to auto-fetch lyrics from Genius")
 
     # Save to file
     if output_path:
@@ -234,16 +261,18 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 examples:
-  %(prog)s song.mp3                         # Basic transcription
-  %(prog)s song.mp3 --lyrics reference.txt  # With lyrics matching
-  %(prog)s song.mp3 -o output.txt           # Save to file
-  %(prog)s --eval                           # Evaluate pipeline
-  %(prog)s song.mp3 --json                  # JSON output
+  %(prog)s song.mp3                                        # Basic transcription
+  %(prog)s song.mp3 --lyrics reference.txt                 # With lyrics file
+  %(prog)s song.mp3 --song "Niggas Be Lame" -a "Yung Bans" # Auto-fetch from Genius
+  %(prog)s song.mp3 -o output.txt                          # Save to file
+  %(prog)s --eval                                          # Evaluate pipeline
         """,
     )
 
     parser.add_argument("audio", nargs="?", help="Audio file to transcribe")
     parser.add_argument("--lyrics", "-l", help="Reference lyrics file for matching")
+    parser.add_argument("--song", "-s", help="Song title (auto-fetch lyrics from Genius)")
+    parser.add_argument("--artist", "-a", help="Artist name (improves Genius search)")
     parser.add_argument("--output", "-o", help="Save transcription to file")
     parser.add_argument("--model", "-m", default="small",
                        choices=["tiny", "base", "small", "medium"],
@@ -269,6 +298,8 @@ examples:
     run_transcription(
         audio_path=args.audio,
         lyrics_path=args.lyrics,
+        song_title=args.song,
+        artist=args.artist,
         model_size=args.model,
         output_path=args.output,
         verbose=args.verbose,
