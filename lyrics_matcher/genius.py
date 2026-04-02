@@ -202,6 +202,12 @@ class GeniusClient:
         # Remove section headers like [Chorus], [Verse 1], [Intro]
         text = re.sub(r"\[.*?\]", "", text)
 
+        # Remove Genius metadata from first line
+        text = re.sub(r"^\d+\s*Contributor[s]?", "", text)
+        text = re.sub(r"^.*?Lyrics", "", text, count=1)
+        text = re.sub(r'["“][^"”]*["”]\s+is a track by.*?Read More', "", text, flags=re.DOTALL)
+        text = re.sub(r'.*?is a (track|song) by.*?Read More', "", text, flags=re.DOTALL)
+
         # Remove contributor/header lines
         lines = text.split("\n")
         cleaned_lines = []
