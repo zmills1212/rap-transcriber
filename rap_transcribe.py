@@ -37,29 +37,73 @@ sys.path.insert(0, str(PROJECT_ROOT))
 # =============================================================================
 
 _whisper_model = None
+_whisper_processor = None
+_using_finetuned = False
 
 
 def get_whisper_model(model_size: str = "small"):
-    """Load Whisper model (cached)."""
-    global _whisper_model
-    if _whisper_model is None:
+    """Load Whisper model (cached). Uses fine-tuned adapter if available."""
+    global _whisper_model, _whisper_processor, _using_finetuned
+    if _whisper_model is not None:
+        return _whisper_model
+
+    adapter_path = PROJECT_ROOT / "training" / "fine_tuned" / "lora_adapter"
+
+    if adapter_path.exists():
         try:
-            import whisper
-            print(f"  Loading Whisper ({model_size})...", end=" ", flush=True)
-            _whisper_model = whisper.load_model(model_size)
-            print("done")
-        except ImportError:
-            print("ERROR: openai-whisper not installed")
-            print("  pip install openai-whisper")
-            sys.exit(1)
+            import torch
+            from transformers import WhisperForConditionalGeneration, WhisperProcessor
+            from peft import PeftModel
+
+            model_name = f"openai/whisper-{model_size}.en"
+            print(f"  Loading fine-tuned Whisper ({model_size})...", end=" ", flush=True)
+
+            _whisper_processor = WhisperProcessor.from_pretrained(model_name)
+            base = WhisperForConditionalGeneration.from_pretrained(
+                model_name, torch_dtype=torch.float32
+            )
+            model = PeftModel.from_pretrained(base, str(adapter_path))
+            _whisper_model = model.merge_and_unload()
+            _whisper_model.eval()
+            _using_finetuned = True
+            print("done (fine-tuned)")
+            return _whisper_model
+        except Exception as e:
+            print(f"\n  Warning: Could not load fine-tuned model: {e}")
+            print(f"  Falling back to baseline Whisper...")
+
+    # Fallback to baseline
+    try:
+        import whisper
+        print(f"  Loading Whisper ({model_size})...", end=" ", flush=True)
+        _whisper_model = whisper.load_model(model_size)
+        _using_finetuned = False
+        print("done (baseline)")
+    except ImportError:
+        print("ERROR: openai-whisper not installed")
+        sys.exit(1)
     return _whisper_model
 
 
 def transcribe(audio_path: str, model_size: str = "small") -> str:
-    """Transcribe audio with Whisper."""
+    """Transcribe audio with Whisper (fine-tuned or baseline)."""
     model = get_whisper_model(model_size)
-    result = model.transcribe(audio_path)
-    return result["text"].strip()
+
+    if _using_finetuned:
+        import torch
+        import librosa
+        y, _ = librosa.load(audio_path, sr=16000, mono=True)
+        inputs = _whisper_processor.feature_extractor(
+            y, sampling_rate=16000, return_tensors="pt"
+        )
+        with torch.no_grad():
+            ids = model.generate(inputs.input_features, max_length=448)
+        return _whisper_processor.tokenizer.batch_decode(
+            ids, skip_special_tokens=True
+        )[0].strip()
+    else:
+        result = model.transcribe(audio_path)
+        return result["text"].strip()
 
 
 def postprocess(text: str) -> str:

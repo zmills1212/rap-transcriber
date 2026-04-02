@@ -177,7 +177,7 @@ def preprocess_dataset(dataset, processor):
         ).input_features[0]
 
         # Encode target text
-        labels = processor.tokenizer(batch["text"]).input_ids
+        labels = processor.tokenizer(batch["text"]).input_ids[:448]
 
         return {
             "input_features": input_features,
@@ -210,8 +210,8 @@ def train(
     weight_decay: float = 0.05,
     label_smoothing: float = 0.1,
     warmup_ratio: float = 0.1,
-    eval_steps: int = 25,
-    early_stopping_patience: int = 3,
+    eval_steps: int = 50,
+    early_stopping_patience: int = 5,
 ):
     """Run fine-tuning with regularization."""
 
@@ -290,7 +290,7 @@ def train(
         save_steps=eval_steps,
         save_total_limit=3,
         load_best_model_at_end=True,
-        metric_for_best_model="wer",
+        metric_for_best_model="eval_loss",
         greater_is_better=False,
 
         # Logging
