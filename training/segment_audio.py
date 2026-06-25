@@ -236,11 +236,41 @@ def align_chunk_sequential(
 # Main Pipeline
 # =============================================================================
 
+def _write_manifest(all_segments: list, chunk_duration: int, overlap: int):
+    """
+    Write (checkpoint) the segment manifest. Called after every song so an
+    interrupted run still leaves a usable manifest of everything completed so
+    far. Returns (mean_alignment_score, count_above_0.12).
+    """
+    n = max(1, len(all_segments))
+    score_sum = sum(s.get("alignment_score", 0.0) for s in all_segments)
+    mean_score = score_sum / n
+    above = sum(1 for s in all_segments if s.get("alignment_score", 0.0) >= 0.12)
+    data = {
+        "total_segments": len(all_segments),
+        "chunk_duration": chunk_duration,
+        "overlap": overlap,
+        "alignment": "v2_sequential_greedy",
+        "mean_alignment_score": round(mean_score, 4),
+        "segments": all_segments,
+    }
+    SEGMENT_MANIFEST.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    return mean_score, above
+
+
 def segment_all(
     chunk_duration: int = CHUNK_DURATION,
     overlap: int = OVERLAP,
+    fresh: bool = False,
 ):
-    """Segment all training samples into aligned chunks (v2 sequential)."""
+    """
+    Segment all training samples into aligned chunks (v2 sequential).
+
+    The manifest is checkpointed after every song, and a prior v2 run is
+    resumed automatically (already-completed songs are skipped), so a long
+    run survives interruption. Pass fresh=True to ignore an existing manifest
+    and re-segment from scratch.
+    """
 
     if not MANIFEST_PATH.exists():
         print("ERROR: No manifest found")
@@ -249,10 +279,28 @@ def segment_all(
     manifest = json.loads(MANIFEST_PATH.read_text())
     samples = manifest.get("samples", [])
 
+    # Resume: reuse an existing *v2* manifest, skipping songs already done.
+    # An old v1 manifest (no alignment marker) is ignored and overwritten.
+    all_segments = []
+    done_ids = set()
+    if not fresh and SEGMENT_MANIFEST.exists():
+        try:
+            existing = json.loads(SEGMENT_MANIFEST.read_text())
+            if existing.get("alignment") == "v2_sequential_greedy":
+                loaded = existing.get("segments", [])
+                done_ids = {s.get("original_sample_id") for s in loaded if s.get("original_sample_id")}
+                # Keep only segments we can resume against, so an id-less song
+                # that gets re-processed can't be duplicated in the manifest.
+                all_segments = [s for s in loaded if s.get("original_sample_id") in done_ids]
+        except Exception:
+            all_segments, done_ids = [], set()
+
     print(f"\n{'=' * 60}")
     print(f"  AUDIO SEGMENTATION PIPELINE (v2 sequential greedy)")
     print(f"  Chunk duration: {chunk_duration}s (overlap: {overlap}s)")
     print(f"  Samples to process: {len(samples)}")
+    if done_ids:
+        print(f"  Resuming: {len(all_segments)} segments from {len(done_ids)} completed songs")
     print(f"{'=' * 60}\n")
 
     # Create output directory
@@ -267,16 +315,20 @@ def segment_all(
 
     step_ratio = (chunk_duration - overlap) / chunk_duration
 
-    all_segments = []
-    total_chunks = 0
+    total_chunks = len(all_segments)
     skipped = 0
-    score_sum = 0.0
+    score_sum = sum(s.get("alignment_score", 0.0) for s in all_segments)
 
     for idx, sample in enumerate(samples):
         audio_file = sample.get("audio_file", "")
         transcript_file = sample.get("transcript_file", "")
         artist = sample.get("metadata", {}).get("artist", "?")
         song = sample.get("metadata", {}).get("song", "?")
+
+        # Resume: skip songs already in the loaded manifest.
+        sample_id = sample.get("id", "")
+        if sample_id and sample_id in done_ids:
+            continue
 
         # Resolve paths
         audio_path = str(DATA_DIR / audio_file) if not Path(audio_file).is_absolute() else audio_file
@@ -319,6 +371,7 @@ def segment_all(
             })
             total_chunks += 1
             score_sum += score
+            _write_manifest(all_segments, chunk_duration, overlap)
             print(f"  [{idx+1}/{len(samples)}] {artist} - {song}: short ({duration:.0f}s), kept as-is (score {score:.2f})")
             continue
 
@@ -382,21 +435,11 @@ def segment_all(
             song_score_sum += score
 
         avg = song_score_sum / max(1, len(chunks))
+        _write_manifest(all_segments, chunk_duration, overlap)
         print(f"  (avg align {avg:.2f}) ✓")
 
-    mean_score = score_sum / max(1, total_chunks)
-    above_thresh = sum(1 for s in all_segments if s["alignment_score"] >= 0.12)
-
-    # Save segment manifest
-    segment_data = {
-        "total_segments": len(all_segments),
-        "chunk_duration": chunk_duration,
-        "overlap": overlap,
-        "alignment": "v2_sequential_greedy",
-        "mean_alignment_score": round(mean_score, 4),
-        "segments": all_segments,
-    }
-    SEGMENT_MANIFEST.write_text(json.dumps(segment_data, indent=2), encoding="utf-8")
+    # Final checkpoint
+    mean_score, above_thresh = _write_manifest(all_segments, chunk_duration, overlap)
 
     print(f"\n{'=' * 60}")
     print(f"  SEGMENTATION COMPLETE")
@@ -420,6 +463,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Segment audio into aligned chunks for training")
     parser.add_argument("--chunk-duration", type=int, default=30, help="Chunk duration in seconds")
     parser.add_argument("--overlap", type=int, default=5, help="Overlap between chunks in seconds")
+    parser.add_argument("--fresh", action="store_true",
+                        help="Ignore any existing manifest and re-segment from scratch")
 
     args = parser.parse_args()
-    segment_all(chunk_duration=args.chunk_duration, overlap=args.overlap)
+    segment_all(chunk_duration=args.chunk_duration, overlap=args.overlap, fresh=args.fresh)
