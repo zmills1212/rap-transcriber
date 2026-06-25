@@ -29,6 +29,13 @@ test_data/audio/
 .DS_Store
 *.swp
 
+# Jupyter scratch
+.ipynb_checkpoints/
+Untitled*.ipynb
+
+# Generated pipeline reports (regenerated each run)
+training_data/*_report.json
+
 # Outputs / Reports
 evaluation/reports/*.json
 

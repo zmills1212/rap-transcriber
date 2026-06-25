@@ -707,6 +707,2759 @@
         "heavy_slang"
       ],
       "added_at": "2026-02-16T20:00:33.474444"
+    },
+    {
+      "id": "train_eb1d5c",
+      "audio_file": "audio/train_eb1d5c.wav",
+      "transcript_file": "transcripts/train_eb1d5c.txt",
+      "metadata": {
+        "artist": "Playboi Carti",
+        "song": "Magnolia",
+        "duration_seconds": 181.9,
+        "word_count": 688,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:16:09.150322"
+      },
+      "challenge_tags": [
+        "mumble",
+        "ad_libs",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_5416f5",
+      "audio_file": "audio/train_5416f5.wav",
+      "transcript_file": "transcripts/train_5416f5.txt",
+      "metadata": {
+        "artist": "Lil Uzi Vert",
+        "song": "XO Tour Llif3",
+        "duration_seconds": 182.7,
+        "word_count": 528,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:05.960304"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_d779ac",
+      "audio_file": "audio/train_d779ac.wav",
+      "transcript_file": "transcripts/train_d779ac.txt",
+      "metadata": {
+        "artist": "Juice WRLD",
+        "song": "Lucid Dreams",
+        "duration_seconds": 239.8,
+        "word_count": 635,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:09.504955"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_1405f0",
+      "audio_file": "audio/train_1405f0.wav",
+      "transcript_file": "transcripts/train_1405f0.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Best Friend",
+        "duration_seconds": 213.0,
+        "word_count": 562,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:17.978917"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_378301",
+      "audio_file": "audio/train_378301.wav",
+      "transcript_file": "transcripts/train_378301.txt",
+      "metadata": {
+        "artist": "Lil Tecca",
+        "song": "Ransom",
+        "duration_seconds": 131.3,
+        "word_count": 446,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:24.794169"
+      },
+      "challenge_tags": [
+        "melodic",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_67d4c8",
+      "audio_file": "audio/train_67d4c8.wav",
+      "transcript_file": "transcripts/train_67d4c8.txt",
+      "metadata": {
+        "artist": "Gunna",
+        "song": "Drip Too Hard",
+        "duration_seconds": 145.5,
+        "word_count": 561,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:31.547161"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_334ff2",
+      "audio_file": "audio/train_334ff2.wav",
+      "transcript_file": "transcripts/train_334ff2.txt",
+      "metadata": {
+        "artist": "21 Savage",
+        "song": "A Lot",
+        "duration_seconds": 288.6,
+        "word_count": 1093,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:39.194008"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_7b097a",
+      "audio_file": "audio/train_7b097a.wav",
+      "transcript_file": "transcripts/train_7b097a.txt",
+      "metadata": {
+        "artist": "Gucci Mane",
+        "song": "Lemonade",
+        "duration_seconds": 246.0,
+        "word_count": 768,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:46.368578"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_3b1e5c",
+      "audio_file": "audio/train_3b1e5c.wav",
+      "transcript_file": "transcripts/train_3b1e5c.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "Mask Off",
+        "duration_seconds": 29.8,
+        "word_count": 587,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:48.799392"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble"
+      ]
+    },
+    {
+      "id": "train_64f80f",
+      "audio_file": "audio/train_64f80f.wav",
+      "transcript_file": "transcripts/train_64f80f.txt",
+      "metadata": {
+        "artist": "Migos",
+        "song": "Bad and Boujee",
+        "duration_seconds": 334.5,
+        "word_count": 1269,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:53.341744"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_d5c944",
+      "audio_file": "audio/train_d5c944.wav",
+      "transcript_file": "transcripts/train_d5c944.txt",
+      "metadata": {
+        "artist": "Key Glock",
+        "song": "Dough",
+        "duration_seconds": 198.9,
+        "word_count": 633,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:17:58.090622"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_dc8f8c",
+      "audio_file": "audio/train_dc8f8c.wav",
+      "transcript_file": "transcripts/train_dc8f8c.txt",
+      "metadata": {
+        "artist": "Ski Mask the Slump God",
+        "song": "Catch Me Outside",
+        "duration_seconds": 145.8,
+        "word_count": 611,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:04.186050"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_25f693",
+      "audio_file": "audio/train_25f693.wav",
+      "transcript_file": "transcripts/train_25f693.txt",
+      "metadata": {
+        "artist": "JID",
+        "song": "Surpass",
+        "duration_seconds": 78.9,
+        "word_count": 169,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:07.234185"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "clean_delivery"
+      ]
+    },
+    {
+      "id": "train_2f0c2c",
+      "audio_file": "audio/train_2f0c2c.wav",
+      "transcript_file": "transcripts/train_2f0c2c.txt",
+      "metadata": {
+        "artist": "Rico Nasty",
+        "song": "Smack a Bitch",
+        "duration_seconds": 217.5,
+        "word_count": 416,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:11.326403"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang",
+        "loud_beat"
+      ]
+    },
+    {
+      "id": "train_9886a2",
+      "audio_file": "audio/train_9886a2.wav",
+      "transcript_file": "transcripts/train_9886a2.txt",
+      "metadata": {
+        "artist": "Denzel Curry",
+        "song": "Ultimate",
+        "duration_seconds": 190.0,
+        "word_count": 606,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:16.961659"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "loud_beat"
+      ]
+    },
+    {
+      "id": "train_36e57d",
+      "audio_file": "audio/train_36e57d.wav",
+      "transcript_file": "transcripts/train_36e57d.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Digits",
+        "duration_seconds": 176.4,
+        "word_count": 646,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:23.151083"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_4e2974",
+      "audio_file": "audio/train_4e2974.wav",
+      "transcript_file": "transcripts/train_4e2974.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Freestyle",
+        "duration_seconds": 168.6,
+        "word_count": 613,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:29.010484"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_ebafb9",
+      "audio_file": "audio/train_ebafb9.wav",
+      "transcript_file": "transcripts/train_ebafb9.txt",
+      "metadata": {
+        "artist": "Chief Keef",
+        "song": "Love Sosa",
+        "duration_seconds": 204.2,
+        "word_count": 793,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:35.390844"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_1edbd7",
+      "audio_file": "audio/train_1edbd7.wav",
+      "transcript_file": "transcripts/train_1edbd7.txt",
+      "metadata": {
+        "artist": "J Cole",
+        "song": "No Role Modelz",
+        "duration_seconds": 29.8,
+        "word_count": 822,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:37.829698"
+      },
+      "challenge_tags": [
+        "clean_delivery"
+      ]
+    },
+    {
+      "id": "train_40c23b",
+      "audio_file": "audio/train_40c23b.wav",
+      "transcript_file": "transcripts/train_40c23b.txt",
+      "metadata": {
+        "artist": "Kendrick Lamar",
+        "song": "HUMBLE",
+        "duration_seconds": 29.8,
+        "word_count": 635,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:45.778997"
+      },
+      "challenge_tags": [
+        "clean_delivery",
+        "loud_beat"
+      ]
+    },
+    {
+      "id": "train_630dda",
+      "audio_file": "audio/train_630dda.wav",
+      "transcript_file": "transcripts/train_630dda.txt",
+      "metadata": {
+        "artist": "Drake",
+        "song": "God's Plan",
+        "duration_seconds": 29.8,
+        "word_count": 395,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:18:48.230826"
+      },
+      "challenge_tags": [
+        "clean_delivery",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_80aa31",
+      "audio_file": "audio/train_80aa31.wav",
+      "transcript_file": "transcripts/train_80aa31.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "Lonely",
+        "duration_seconds": 194.6,
+        "word_count": 513,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:20.362995"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_86cf20",
+      "audio_file": "audio/train_86cf20.wav",
+      "transcript_file": "transcripts/train_86cf20.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "4Tspoon",
+        "duration_seconds": 174.0,
+        "word_count": 395,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:24.858091"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_7b4b1d",
+      "audio_file": "audio/train_7b4b1d.wav",
+      "transcript_file": "transcripts/train_7b4b1d.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "Ridin",
+        "duration_seconds": 225.1,
+        "word_count": 634,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:31.555521"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_d59849",
+      "audio_file": "audio/train_d59849.wav",
+      "transcript_file": "transcripts/train_d59849.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "Out My Face",
+        "duration_seconds": 265.2,
+        "word_count": 395,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:35.793431"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_f9f568",
+      "audio_file": "audio/train_f9f568.wav",
+      "transcript_file": "transcripts/train_f9f568.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "Ready Set Go",
+        "duration_seconds": 181.3,
+        "word_count": 414,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:41.539204"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_a208cf",
+      "audio_file": "audio/train_a208cf.wav",
+      "transcript_file": "transcripts/train_a208cf.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "SOS",
+        "duration_seconds": 114.4,
+        "word_count": 298,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:46.035650"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_a51f75",
+      "audio_file": "audio/train_a51f75.wav",
+      "transcript_file": "transcripts/train_a51f75.txt",
+      "metadata": {
+        "artist": "Yung Bans",
+        "song": "Birthday",
+        "duration_seconds": 174.0,
+        "word_count": 2291,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:51.266705"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_eb1240",
+      "audio_file": "audio/train_eb1240.wav",
+      "transcript_file": "transcripts/train_eb1240.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "One Night",
+        "duration_seconds": 243.3,
+        "word_count": 548,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:25:57.920672"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_437cd9",
+      "audio_file": "audio/train_437cd9.wav",
+      "transcript_file": "transcripts/train_437cd9.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Minnesota",
+        "duration_seconds": 268.1,
+        "word_count": 398,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:04.325907"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_371224",
+      "audio_file": "audio/train_371224.wav",
+      "transcript_file": "transcripts/train_371224.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Broccoli",
+        "duration_seconds": 225.3,
+        "word_count": 646,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:08.029351"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_e5abe4",
+      "audio_file": "audio/train_e5abe4.wav",
+      "transcript_file": "transcripts/train_e5abe4.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "iSpy",
+        "duration_seconds": 253.2,
+        "word_count": 792,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:13.984245"
+      },
+      "challenge_tags": [
+        "melodic",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_8c9d7a",
+      "audio_file": "audio/train_8c9d7a.wav",
+      "transcript_file": "transcripts/train_8c9d7a.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Peek A Boo",
+        "duration_seconds": 247.6,
+        "word_count": 890,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:21.105744"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_d13b5a",
+      "audio_file": "audio/train_d13b5a.wav",
+      "transcript_file": "transcripts/train_d13b5a.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Get Dripped",
+        "duration_seconds": 158.8,
+        "word_count": 507,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:29.397103"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_71f0b9",
+      "audio_file": "audio/train_71f0b9.wav",
+      "transcript_file": "transcripts/train_71f0b9.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Poland",
+        "duration_seconds": 83.3,
+        "word_count": 143,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:32.392991"
+      },
+      "challenge_tags": [
+        "autotune",
+        "melodic",
+        "mumble"
+      ]
+    },
+    {
+      "id": "train_360922",
+      "audio_file": "audio/train_360922.wav",
+      "transcript_file": "transcripts/train_360922.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Sorry Bout That",
+        "duration_seconds": 186.0,
+        "word_count": 756,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:37.224760"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_9c4309",
+      "audio_file": "audio/train_9c4309.wav",
+      "transcript_file": "transcripts/train_9c4309.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Get Busy",
+        "duration_seconds": 157.8,
+        "word_count": 479,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:40.783786"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_150554",
+      "audio_file": "audio/train_150554.wav",
+      "transcript_file": "transcripts/train_150554.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Poppin",
+        "duration_seconds": 167.2,
+        "word_count": 651,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:46.506525"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_6a1f6b",
+      "audio_file": "audio/train_6a1f6b.wav",
+      "transcript_file": "transcripts/train_6a1f6b.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Money So Big",
+        "duration_seconds": 160.1,
+        "word_count": 653,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:53.429342"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_8277c6",
+      "audio_file": "audio/train_8277c6.wav",
+      "transcript_file": "transcripts/train_8277c6.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Turban",
+        "duration_seconds": 155.7,
+        "word_count": 679,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:26:58.976140"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_1a0d1d",
+      "audio_file": "audio/train_1a0d1d.wav",
+      "transcript_file": "transcripts/train_1a0d1d.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Tonka",
+        "duration_seconds": 181.6,
+        "word_count": 541,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:03.778101"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_c13dbf",
+      "audio_file": "audio/train_c13dbf.wav",
+      "transcript_file": "transcripts/train_c13dbf.txt",
+      "metadata": {
+        "artist": "Yeat",
+        "song": "Lying 4 Fun",
+        "duration_seconds": 304.0,
+        "word_count": 880,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:10.002220"
+      },
+      "challenge_tags": [
+        "mumble",
+        "autotune",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_d73490",
+      "audio_file": "audio/train_d73490.wav",
+      "transcript_file": "transcripts/train_d73490.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "March Madness",
+        "duration_seconds": 244.5,
+        "word_count": 896,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:14.528643"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_263b1d",
+      "audio_file": "audio/train_263b1d.wav",
+      "transcript_file": "transcripts/train_263b1d.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "Codeine Crazy",
+        "duration_seconds": 29.8,
+        "word_count": 1008,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:17.060771"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "autotune",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_565849",
+      "audio_file": "audio/train_565849.wav",
+      "transcript_file": "transcripts/train_565849.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "Stick Talk",
+        "duration_seconds": 171.3,
+        "word_count": 542,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:20.583305"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_14a58b",
+      "audio_file": "audio/train_14a58b.wav",
+      "transcript_file": "transcripts/train_14a58b.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "Wicked",
+        "duration_seconds": 29.8,
+        "word_count": 398,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:23.146718"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble"
+      ]
+    },
+    {
+      "id": "train_14e141",
+      "audio_file": "audio/train_14e141.wav",
+      "transcript_file": "transcripts/train_14e141.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "Thought It Was a Drought",
+        "duration_seconds": 265.2,
+        "word_count": 796,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:29.615741"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_7db1fb",
+      "audio_file": "audio/train_7db1fb.wav",
+      "transcript_file": "transcripts/train_7db1fb.txt",
+      "metadata": {
+        "artist": "Future",
+        "song": "Low Life",
+        "duration_seconds": 29.8,
+        "word_count": 884,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-28T19:27:32.209957"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "autotune",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_e9b97c",
+      "audio_file": "audio/train_e9b97c.wav",
+      "transcript_file": "transcripts/train_e9b97c.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Wyclef Jean",
+        "duration_seconds": 236.3,
+        "word_count": 832,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:18.615796"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_3ad6f4",
+      "audio_file": "audio/train_3ad6f4.wav",
+      "transcript_file": "transcripts/train_3ad6f4.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Halftime",
+        "duration_seconds": 226.7,
+        "word_count": 639,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:23.946185"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_35a942",
+      "audio_file": "audio/train_35a942.wav",
+      "transcript_file": "transcripts/train_35a942.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Stoner",
+        "duration_seconds": 240.0,
+        "word_count": 631,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:29.716057"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_41f1fc",
+      "audio_file": "audio/train_41f1fc.wav",
+      "transcript_file": "transcripts/train_41f1fc.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Check",
+        "duration_seconds": 230.7,
+        "word_count": 708,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:34.902604"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_7c8358",
+      "audio_file": "audio/train_7c8358.wav",
+      "transcript_file": "transcripts/train_7c8358.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "With That",
+        "duration_seconds": 202.5,
+        "word_count": 648,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:40.612933"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_902a38",
+      "audio_file": "audio/train_902a38.wav",
+      "transcript_file": "transcripts/train_902a38.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Danny Glover",
+        "duration_seconds": 223.3,
+        "word_count": 869,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:45.935132"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_bf21fc",
+      "audio_file": "audio/train_bf21fc.wav",
+      "transcript_file": "transcripts/train_bf21fc.txt",
+      "metadata": {
+        "artist": "Young Thug",
+        "song": "Lifestyle",
+        "duration_seconds": 193.8,
+        "word_count": 942,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:50.148990"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_67a2e4",
+      "audio_file": "audio/train_67a2e4.wav",
+      "transcript_file": "transcripts/train_67a2e4.txt",
+      "metadata": {
+        "artist": "Chief Keef",
+        "song": "Faneto",
+        "duration_seconds": 221.2,
+        "word_count": 658,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:54:56.493287"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect",
+        "ad_libs",
+        "loud_beat"
+      ]
+    },
+    {
+      "id": "train_4cfaa9",
+      "audio_file": "audio/train_4cfaa9.wav",
+      "transcript_file": "transcripts/train_4cfaa9.txt",
+      "metadata": {
+        "artist": "Chief Keef",
+        "song": "Earned It",
+        "duration_seconds": 315.8,
+        "word_count": 1014,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:00.228088"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_9871c5",
+      "audio_file": "audio/train_9871c5.wav",
+      "transcript_file": "transcripts/train_9871c5.txt",
+      "metadata": {
+        "artist": "Chief Keef",
+        "song": "Hate Bein Sober",
+        "duration_seconds": 280.3,
+        "word_count": 438,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:04.196107"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble"
+      ]
+    },
+    {
+      "id": "train_20af9c",
+      "audio_file": "audio/train_20af9c.wav",
+      "transcript_file": "transcripts/train_20af9c.txt",
+      "metadata": {
+        "artist": "Chief Keef",
+        "song": "Citgo",
+        "duration_seconds": 193.7,
+        "word_count": 566,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:08.068614"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_900739",
+      "audio_file": "audio/train_900739.wav",
+      "transcript_file": "transcripts/train_900739.txt",
+      "metadata": {
+        "artist": "Desiigner",
+        "song": "Panda",
+        "duration_seconds": 246.6,
+        "word_count": 820,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:11.056914"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_8d4867",
+      "audio_file": "audio/train_8d4867.wav",
+      "transcript_file": "transcripts/train_8d4867.txt",
+      "metadata": {
+        "artist": "Desiigner",
+        "song": "Timmy Turner",
+        "duration_seconds": 757.5,
+        "word_count": 107,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:18.689953"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_c00675",
+      "audio_file": "audio/train_c00675.wav",
+      "transcript_file": "transcripts/train_c00675.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Close Friends",
+        "duration_seconds": 203.9,
+        "word_count": 596,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:23.889919"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_de6678",
+      "audio_file": "audio/train_de6678.wav",
+      "transcript_file": "transcripts/train_de6678.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Drip Too Hard",
+        "duration_seconds": 145.5,
+        "word_count": 561,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:27.774518"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "mumble",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_2fb1bd",
+      "audio_file": "audio/train_2fb1bd.wav",
+      "transcript_file": "transcripts/train_2fb1bd.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Woah",
+        "duration_seconds": 183.0,
+        "word_count": 705,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:32.508543"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_ccc069",
+      "audio_file": "audio/train_ccc069.wav",
+      "transcript_file": "transcripts/train_ccc069.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Sum 2 Prove",
+        "duration_seconds": 205.8,
+        "word_count": 934,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:37.361090"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "fast_flow",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_2271f9",
+      "audio_file": "audio/train_2271f9.wav",
+      "transcript_file": "transcripts/train_2271f9.txt",
+      "metadata": {
+        "artist": "Gunna",
+        "song": "Pushin P",
+        "duration_seconds": 136.3,
+        "word_count": 361,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:42.908709"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_ce4f06",
+      "audio_file": "audio/train_ce4f06.wav",
+      "transcript_file": "transcripts/train_ce4f06.txt",
+      "metadata": {
+        "artist": "Gunna",
+        "song": "Top Floor",
+        "duration_seconds": 170.0,
+        "word_count": 456,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:48.926726"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_1e97c8",
+      "audio_file": "audio/train_1e97c8.wav",
+      "transcript_file": "transcripts/train_1e97c8.txt",
+      "metadata": {
+        "artist": "Gunna",
+        "song": "Drip or Drown",
+        "duration_seconds": 126.2,
+        "word_count": 473,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:55:53.087501"
+      },
+      "challenge_tags": [
+        "mumble",
+        "heavy_slang",
+        "autotune",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_ae4f6b",
+      "audio_file": "audio/train_ae4f6b.wav",
+      "transcript_file": "transcripts/train_ae4f6b.txt",
+      "metadata": {
+        "artist": "Playboi Carti",
+        "song": "Woah",
+        "duration_seconds": 605.5,
+        "word_count": 799,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:00.564071"
+      },
+      "challenge_tags": [
+        "mumble",
+        "ad_libs",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_080f46",
+      "audio_file": "audio/train_080f46.wav",
+      "transcript_file": "transcripts/train_080f46.txt",
+      "metadata": {
+        "artist": "Playboi Carti",
+        "song": "Flatbed Freestyle",
+        "duration_seconds": 241.8,
+        "word_count": 650,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:07.392910"
+      },
+      "challenge_tags": [
+        "mumble",
+        "ad_libs",
+        "heavy_slang",
+        "autotune"
+      ]
+    },
+    {
+      "id": "train_768c30",
+      "audio_file": "audio/train_768c30.wav",
+      "transcript_file": "transcripts/train_768c30.txt",
+      "metadata": {
+        "artist": "Playboi Carti",
+        "song": "Shoota",
+        "duration_seconds": 153.8,
+        "word_count": 438,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:12.492342"
+      },
+      "challenge_tags": [
+        "mumble",
+        "ad_libs",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_4c8376",
+      "audio_file": "audio/train_4c8376.wav",
+      "transcript_file": "transcripts/train_4c8376.txt",
+      "metadata": {
+        "artist": "21 Savage",
+        "song": "No Heart",
+        "duration_seconds": 235.1,
+        "word_count": 649,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:18.088394"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_1b8391",
+      "audio_file": "audio/train_1b8391.wav",
+      "transcript_file": "transcripts/train_1b8391.txt",
+      "metadata": {
+        "artist": "21 Savage",
+        "song": "Bank Account",
+        "duration_seconds": 29.8,
+        "word_count": 813,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:23.444414"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_ac79f1",
+      "audio_file": "audio/train_ac79f1.wav",
+      "transcript_file": "transcripts/train_ac79f1.txt",
+      "metadata": {
+        "artist": "21 Savage",
+        "song": "X",
+        "duration_seconds": 258.9,
+        "word_count": 797,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:28.474697"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_23fe79",
+      "audio_file": "audio/train_23fe79.wav",
+      "transcript_file": "transcripts/train_23fe79.txt",
+      "metadata": {
+        "artist": "Migos",
+        "song": "T-Shirt",
+        "duration_seconds": 29.8,
+        "word_count": 621,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:32.632445"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_f213b8",
+      "audio_file": "audio/train_f213b8.wav",
+      "transcript_file": "transcripts/train_f213b8.txt",
+      "metadata": {
+        "artist": "Migos",
+        "song": "Slippery",
+        "duration_seconds": 29.8,
+        "word_count": 906,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:36.463454"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_e440c0",
+      "audio_file": "audio/train_e440c0.wav",
+      "transcript_file": "transcripts/train_e440c0.txt",
+      "metadata": {
+        "artist": "Migos",
+        "song": "Deadz",
+        "duration_seconds": 29.8,
+        "word_count": 987,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-03-30T17:56:39.884903"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "ad_libs",
+        "mumble"
+      ]
+    },
+    {
+      "id": "train_a6000a",
+      "audio_file": "audio/train_a6000a.wav",
+      "transcript_file": "transcripts/train_a6000a.txt",
+      "metadata": {
+        "artist": "Polo G",
+        "song": "Pop Out",
+        "duration_seconds": 166.7,
+        "word_count": 632,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:46:25.125867"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_3b4684",
+      "audio_file": "audio/train_3b4684.wav",
+      "transcript_file": "transcripts/train_3b4684.txt",
+      "metadata": {
+        "artist": "Rod Wave",
+        "song": "Heart On Ice",
+        "duration_seconds": 159.7,
+        "word_count": 302,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:46:33.109218"
+      },
+      "challenge_tags": [
+        "singing",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_4bf4ba",
+      "audio_file": "audio/train_4bf4ba.wav",
+      "transcript_file": "transcripts/train_4bf4ba.txt",
+      "metadata": {
+        "artist": "Rod Wave",
+        "song": "Tombstone",
+        "duration_seconds": 160.1,
+        "word_count": 425,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:46:36.475642"
+      },
+      "challenge_tags": [
+        "singing",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_6d9cc7",
+      "audio_file": "audio/train_6d9cc7.wav",
+      "transcript_file": "transcripts/train_6d9cc7.txt",
+      "metadata": {
+        "artist": "Megan Thee Stallion",
+        "song": "Savage",
+        "duration_seconds": 155.6,
+        "word_count": 447,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:47:03.751018"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_348869",
+      "audio_file": "audio/train_348869.wav",
+      "transcript_file": "transcripts/train_348869.txt",
+      "metadata": {
+        "artist": "Megan Thee Stallion",
+        "song": "Body",
+        "duration_seconds": 171.1,
+        "word_count": 482,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:47:08.948977"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_9a8014",
+      "audio_file": "audio/train_9a8014.wav",
+      "transcript_file": "transcripts/train_9a8014.txt",
+      "metadata": {
+        "artist": "Playboi Carti",
+        "song": "Wokeuplikethis",
+        "duration_seconds": 29.8,
+        "word_count": 730,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:47:18.565421"
+      },
+      "challenge_tags": [
+        "mumble",
+        "ad_libs"
+      ]
+    },
+    {
+      "id": "train_53568b",
+      "audio_file": "audio/train_53568b.wav",
+      "transcript_file": "transcripts/train_53568b.txt",
+      "metadata": {
+        "artist": "Kendrick Lamar",
+        "song": "Money Trees",
+        "duration_seconds": 29.8,
+        "word_count": 1180,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:47:33.671561"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_069bb3",
+      "audio_file": "audio/train_069bb3.wav",
+      "transcript_file": "transcripts/train_069bb3.txt",
+      "metadata": {
+        "artist": "Fivio Foreign",
+        "song": "Big Drip",
+        "duration_seconds": 168.4,
+        "word_count": 477,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-01T19:47:57.622271"
+      },
+      "challenge_tags": [
+        "accent_dialect",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_f23aac",
+      "audio_file": "audio/train_f23aac.wav",
+      "transcript_file": "transcripts/train_f23aac.txt",
+      "metadata": {
+        "artist": "Polo G",
+        "song": "Rapstar",
+        "duration_seconds": 165.9,
+        "word_count": 578,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:01:51.944788"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_bdc7db",
+      "audio_file": "audio/train_bdc7db.wav",
+      "transcript_file": "transcripts/train_bdc7db.txt",
+      "metadata": {
+        "artist": "Lil Durk",
+        "song": "All My Life",
+        "duration_seconds": 223.8,
+        "word_count": 771,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:01:59.869926"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_6f2aec",
+      "audio_file": "audio/train_6f2aec.wav",
+      "transcript_file": "transcripts/train_6f2aec.txt",
+      "metadata": {
+        "artist": "Lil Durk",
+        "song": "Laugh Now Cry Later",
+        "duration_seconds": 261.5,
+        "word_count": 642,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:08.406563"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_bc28f6",
+      "audio_file": "audio/train_bc28f6.wav",
+      "transcript_file": "transcripts/train_bc28f6.txt",
+      "metadata": {
+        "artist": "Moneybagg Yo",
+        "song": "Said Sum",
+        "duration_seconds": 155.2,
+        "word_count": 693,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:14.673790"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_6861a2",
+      "audio_file": "audio/train_6861a2.wav",
+      "transcript_file": "transcripts/train_6861a2.txt",
+      "metadata": {
+        "artist": "Moneybagg Yo",
+        "song": "Wockesha",
+        "duration_seconds": 182.1,
+        "word_count": 599,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:20.520652"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_548bce",
+      "audio_file": "audio/train_548bce.wav",
+      "transcript_file": "transcripts/train_548bce.txt",
+      "metadata": {
+        "artist": "EST Gee",
+        "song": "5500 Degrees",
+        "duration_seconds": 184.9,
+        "word_count": 723,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:26.869191"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_26b519",
+      "audio_file": "audio/train_26b519.wav",
+      "transcript_file": "transcripts/train_26b519.txt",
+      "metadata": {
+        "artist": "NLE Choppa",
+        "song": "Shotta Flow",
+        "duration_seconds": 163.0,
+        "word_count": 563,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:34.791990"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_445beb",
+      "audio_file": "audio/train_445beb.wav",
+      "transcript_file": "transcripts/train_445beb.txt",
+      "metadata": {
+        "artist": "NLE Choppa",
+        "song": "Walk Em Down",
+        "duration_seconds": 171.3,
+        "word_count": 582,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:44.300044"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_8e23b6",
+      "audio_file": "audio/train_8e23b6.wav",
+      "transcript_file": "transcripts/train_8e23b6.txt",
+      "metadata": {
+        "artist": "Lil Uzi Vert",
+        "song": "Money Longer",
+        "duration_seconds": 198.9,
+        "word_count": 496,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:02:52.807015"
+      },
+      "challenge_tags": [
+        "mumble",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_fd5b1b",
+      "audio_file": "audio/train_fd5b1b.wav",
+      "transcript_file": "transcripts/train_fd5b1b.txt",
+      "metadata": {
+        "artist": "JID",
+        "song": "Surround Sound",
+        "duration_seconds": 230.0,
+        "word_count": 953,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:03:03.956181"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_0bcc5b",
+      "audio_file": "audio/train_0bcc5b.wav",
+      "transcript_file": "transcripts/train_0bcc5b.txt",
+      "metadata": {
+        "artist": "J. Cole",
+        "song": "Middle Child",
+        "duration_seconds": 213.6,
+        "word_count": 755,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:03:13.290450"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_7fee23",
+      "audio_file": "audio/train_7fee23.wav",
+      "transcript_file": "transcripts/train_7fee23.txt",
+      "metadata": {
+        "artist": "Roddy Ricch",
+        "song": "The Box",
+        "duration_seconds": 196.9,
+        "word_count": 585,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:03:25.012921"
+      },
+      "challenge_tags": [
+        "melodic",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_c2e302",
+      "audio_file": "audio/train_c2e302.wav",
+      "transcript_file": "transcripts/train_c2e302.txt",
+      "metadata": {
+        "artist": "Roddy Ricch",
+        "song": "High Fashion",
+        "duration_seconds": 220.8,
+        "word_count": 668,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:03:35.332908"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_2972b9",
+      "audio_file": "audio/train_2972b9.wav",
+      "transcript_file": "transcripts/train_2972b9.txt",
+      "metadata": {
+        "artist": "YG",
+        "song": "Big Bank",
+        "duration_seconds": 239.3,
+        "word_count": 788,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:03:42.675560"
+      },
+      "challenge_tags": [
+        "accent_dialect",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_1b2614",
+      "audio_file": "audio/train_1b2614.wav",
+      "transcript_file": "transcripts/train_1b2614.txt",
+      "metadata": {
+        "artist": "Blueface",
+        "song": "Thotiana",
+        "duration_seconds": 240.9,
+        "word_count": 454,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:03:54.205604"
+      },
+      "challenge_tags": [
+        "accent_dialect",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_fee995",
+      "audio_file": "audio/train_fee995.wav",
+      "transcript_file": "transcripts/train_fee995.txt",
+      "metadata": {
+        "artist": "Pop Smoke",
+        "song": "Dior",
+        "duration_seconds": 216.4,
+        "word_count": 538,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:01.746165"
+      },
+      "challenge_tags": [
+        "accent_dialect",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_6d07e1",
+      "audio_file": "audio/train_6d07e1.wav",
+      "transcript_file": "transcripts/train_6d07e1.txt",
+      "metadata": {
+        "artist": "Pop Smoke",
+        "song": "Welcome to the Party",
+        "duration_seconds": 215.3,
+        "word_count": 684,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:13.309011"
+      },
+      "challenge_tags": [
+        "accent_dialect",
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_fa145f",
+      "audio_file": "audio/train_fa145f.wav",
+      "transcript_file": "transcripts/train_fa145f.txt",
+      "metadata": {
+        "artist": "DaBaby",
+        "song": "Suge",
+        "duration_seconds": 165.1,
+        "word_count": 791,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:26.988926"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_916b73",
+      "audio_file": "audio/train_916b73.wav",
+      "transcript_file": "transcripts/train_916b73.txt",
+      "metadata": {
+        "artist": "Lil Nas X",
+        "song": "Panini",
+        "duration_seconds": 115.4,
+        "word_count": 253,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:34.085117"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_5139bb",
+      "audio_file": "audio/train_5139bb.wav",
+      "transcript_file": "transcripts/train_5139bb.txt",
+      "metadata": {
+        "artist": "Jack Harlow",
+        "song": "Whats Poppin",
+        "duration_seconds": 139.8,
+        "word_count": 564,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:41.642451"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_d1a214",
+      "audio_file": "audio/train_d1a214.wav",
+      "transcript_file": "transcripts/train_d1a214.txt",
+      "metadata": {
+        "artist": "Cardi B",
+        "song": "Bodak Yellow",
+        "duration_seconds": 233.7,
+        "word_count": 734,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:50.619843"
+      },
+      "challenge_tags": [
+        "fast_flow",
+        "accent_dialect",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_4869c0",
+      "audio_file": "audio/train_4869c0.wav",
+      "transcript_file": "transcripts/train_4869c0.txt",
+      "metadata": {
+        "artist": "Travis Scott",
+        "song": "SICKO MODE",
+        "duration_seconds": 314.3,
+        "word_count": 807,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:04:57.342090"
+      },
+      "challenge_tags": [
+        "autotune",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_140f6c",
+      "audio_file": "audio/train_140f6c.wav",
+      "transcript_file": "transcripts/train_140f6c.txt",
+      "metadata": {
+        "artist": "Travis Scott",
+        "song": "goosebumps",
+        "duration_seconds": 250.5,
+        "word_count": 583,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-02T20:05:08.849553"
+      },
+      "challenge_tags": [
+        "autotune",
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_187589",
+      "audio_file": "audio/train_187589.wav",
+      "transcript_file": "transcripts/train_187589.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Talk To Me",
+        "duration_seconds": 227.8,
+        "word_count": 635,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-09T20:27:42.049598"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_d857b9",
+      "audio_file": "audio/train_d857b9.wav",
+      "transcript_file": "transcripts/train_d857b9.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Impatient Freestyle",
+        "duration_seconds": 238.1,
+        "word_count": 826,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-09T20:27:46.794871"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_184bdf",
+      "audio_file": "audio/train_184bdf.wav",
+      "transcript_file": "transcripts/train_184bdf.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Flu Flamming",
+        "duration_seconds": 140.3,
+        "word_count": 441,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-09T20:27:50.779849"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_592346",
+      "audio_file": "audio/train_592346.wav",
+      "transcript_file": "transcripts/train_592346.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Big Banc Uchies",
+        "duration_seconds": 202.2,
+        "word_count": 506,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:04.533484"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_b0fff2",
+      "audio_file": "audio/train_b0fff2.wav",
+      "transcript_file": "transcripts/train_b0fff2.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Roll Bounce",
+        "duration_seconds": 206.4,
+        "word_count": 558,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:08.906062"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_b6e2f1",
+      "audio_file": "audio/train_b6e2f1.wav",
+      "transcript_file": "transcripts/train_b6e2f1.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Out The Slums",
+        "duration_seconds": 194.6,
+        "word_count": 675,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:14.369396"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_1c0ac5",
+      "audio_file": "audio/train_1c0ac5.wav",
+      "transcript_file": "transcripts/train_1c0ac5.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Musty Freestyle",
+        "duration_seconds": 175.1,
+        "word_count": 611,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:26.351531"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_edf934",
+      "audio_file": "audio/train_edf934.wav",
+      "transcript_file": "transcripts/train_edf934.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "300 Raccs",
+        "duration_seconds": 169.1,
+        "word_count": 542,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:30.664462"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_7cc733",
+      "audio_file": "audio/train_7cc733.wav",
+      "transcript_file": "transcripts/train_7cc733.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "We Know The Truth",
+        "duration_seconds": 215.6,
+        "word_count": 769,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:36.843822"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_25d156",
+      "audio_file": "audio/train_25d156.wav",
+      "transcript_file": "transcripts/train_25d156.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Betchua Freestyle",
+        "duration_seconds": 384.6,
+        "word_count": 1163,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:42.872239"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_2f6d80",
+      "audio_file": "audio/train_2f6d80.wav",
+      "transcript_file": "transcripts/train_2f6d80.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Too Icey",
+        "duration_seconds": 190.1,
+        "word_count": 645,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:47.952874"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_d27047",
+      "audio_file": "audio/train_d27047.wav",
+      "transcript_file": "transcripts/train_d27047.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Ion Rap Beef",
+        "duration_seconds": 172.8,
+        "word_count": 694,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:52.430262"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_07992d",
+      "audio_file": "audio/train_07992d.wav",
+      "transcript_file": "transcripts/train_07992d.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Long Live The Greatest",
+        "duration_seconds": 200.1,
+        "word_count": 597,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:32:57.463403"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_7a0625",
+      "audio_file": "audio/train_7a0625.wav",
+      "transcript_file": "transcripts/train_7a0625.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Fights Don't Matter",
+        "duration_seconds": 153.1,
+        "word_count": 499,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:01.635328"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_fa2e8e",
+      "audio_file": "audio/train_fa2e8e.wav",
+      "transcript_file": "transcripts/train_fa2e8e.txt",
+      "metadata": {
+        "artist": "Drakeo The Ruler",
+        "song": "Mr. Get Dough",
+        "duration_seconds": 203.2,
+        "word_count": 529,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:05.879018"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_ef135b",
+      "audio_file": "audio/train_ef135b.wav",
+      "transcript_file": "transcripts/train_ef135b.txt",
+      "metadata": {
+        "artist": "DRAM",
+        "song": "Broccoli",
+        "duration_seconds": 225.3,
+        "word_count": 634,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:19.165008"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_d71f23",
+      "audio_file": "audio/train_d71f23.wav",
+      "transcript_file": "transcripts/train_d71f23.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Wanna Be Us",
+        "duration_seconds": 186.3,
+        "word_count": 603,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:26.772120"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_774761",
+      "audio_file": "audio/train_774761.wav",
+      "transcript_file": "transcripts/train_774761.txt",
+      "metadata": {
+        "artist": "KYLE",
+        "song": "iSpy",
+        "duration_seconds": 253.2,
+        "word_count": 764,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:30.510288"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_5ce41e",
+      "audio_file": "audio/train_5ce41e.wav",
+      "transcript_file": "transcripts/train_5ce41e.txt",
+      "metadata": {
+        "artist": "Quavo",
+        "song": "Ice Tray",
+        "duration_seconds": 154.8,
+        "word_count": 540,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:35.740033"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_5b9cdf",
+      "audio_file": "audio/train_5b9cdf.wav",
+      "transcript_file": "transcripts/train_5b9cdf.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Shoot Out The Roof",
+        "duration_seconds": 157.6,
+        "word_count": 418,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:42.416074"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_4c0991",
+      "audio_file": "audio/train_4c0991.wav",
+      "transcript_file": "transcripts/train_4c0991.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "Water on My Face",
+        "duration_seconds": 219.1,
+        "word_count": 425,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:47.060212"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_8b098c",
+      "audio_file": "audio/train_8b098c.wav",
+      "transcript_file": "transcripts/train_8b098c.txt",
+      "metadata": {
+        "artist": "Lil Yachty",
+        "song": "All In",
+        "duration_seconds": 388.3,
+        "word_count": 934,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:54.997176"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_daf867",
+      "audio_file": "audio/train_daf867.wav",
+      "transcript_file": "transcripts/train_daf867.txt",
+      "metadata": {
+        "artist": "Calvin Harris",
+        "song": "Faking It",
+        "duration_seconds": 29.8,
+        "word_count": 670,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:33:58.566882"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_49472f",
+      "audio_file": "audio/train_49472f.wav",
+      "transcript_file": "transcripts/train_49472f.txt",
+      "metadata": {
+        "artist": "Lazer Dim 700",
+        "song": "Laced Max",
+        "duration_seconds": 90.1,
+        "word_count": 278,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:02.164915"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_e0332f",
+      "audio_file": "audio/train_e0332f.wav",
+      "transcript_file": "transcripts/train_e0332f.txt",
+      "metadata": {
+        "artist": "Lazer Dim 700",
+        "song": "STILL IN THE PAINT",
+        "duration_seconds": 397.6,
+        "word_count": 889,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:07.622884"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_f6f27a",
+      "audio_file": "audio/train_f6f27a.wav",
+      "transcript_file": "transcripts/train_f6f27a.txt",
+      "metadata": {
+        "artist": "Lazer Dim 700",
+        "song": "Asian Rock",
+        "duration_seconds": 68.0,
+        "word_count": 202,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:11.914454"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_9eaadd",
+      "audio_file": "audio/train_9eaadd.wav",
+      "transcript_file": "transcripts/train_9eaadd.txt",
+      "metadata": {
+        "artist": "Lazer Dim 700",
+        "song": "Treacherous",
+        "duration_seconds": 110.0,
+        "word_count": 560,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:14.899915"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_bcf4ad",
+      "audio_file": "audio/train_bcf4ad.wav",
+      "transcript_file": "transcripts/train_bcf4ad.txt",
+      "metadata": {
+        "artist": "Lazer Dim 700",
+        "song": "WTM",
+        "duration_seconds": 140.7,
+        "word_count": 542,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:22.462787"
+      },
+      "challenge_tags": [
+        "heavy_slang",
+        "accent_dialect"
+      ]
+    },
+    {
+      "id": "train_12418f",
+      "audio_file": "audio/train_12418f.wav",
+      "transcript_file": "transcripts/train_12418f.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Squidrific",
+        "duration_seconds": 173.0,
+        "word_count": 503,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:26.891782"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_dbe027",
+      "audio_file": "audio/train_dbe027.wav",
+      "transcript_file": "transcripts/train_dbe027.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Purple Ape",
+        "duration_seconds": 192.8,
+        "word_count": 448,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:30.787181"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_e52f96",
+      "audio_file": "audio/train_e52f96.wav",
+      "transcript_file": "transcripts/train_e52f96.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Lost All My Feelings",
+        "duration_seconds": 165.6,
+        "word_count": 521,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:38.306218"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_b51d34",
+      "audio_file": "audio/train_b51d34.wav",
+      "transcript_file": "transcripts/train_b51d34.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Watery",
+        "duration_seconds": 210.6,
+        "word_count": 777,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:42.767615"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_833f9f",
+      "audio_file": "audio/train_833f9f.wav",
+      "transcript_file": "transcripts/train_833f9f.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Bread Head",
+        "duration_seconds": 242.9,
+        "word_count": 587,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:49.316554"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_11d3bb",
+      "audio_file": "audio/train_11d3bb.wav",
+      "transcript_file": "transcripts/train_11d3bb.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Tonight",
+        "duration_seconds": 154.2,
+        "word_count": 438,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:34:56.951223"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_89ed11",
+      "audio_file": "audio/train_89ed11.wav",
+      "transcript_file": "transcripts/train_89ed11.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Marsupial Superstars",
+        "duration_seconds": 192.2,
+        "word_count": 390,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:01.845591"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_60a7c7",
+      "audio_file": "audio/train_60a7c7.wav",
+      "transcript_file": "transcripts/train_60a7c7.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Viking",
+        "duration_seconds": 164.6,
+        "word_count": 697,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:08.486614"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_8b87ff",
+      "audio_file": "audio/train_8b87ff.wav",
+      "transcript_file": "transcripts/train_8b87ff.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Honey Bees",
+        "duration_seconds": 146.1,
+        "word_count": 392,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:13.819406"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_709245",
+      "audio_file": "audio/train_709245.wav",
+      "transcript_file": "transcripts/train_709245.txt",
+      "metadata": {
+        "artist": "SahBabii",
+        "song": "Purple Umbrella",
+        "duration_seconds": 160.3,
+        "word_count": 391,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:21.158423"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_4ad4dd",
+      "audio_file": "audio/train_4ad4dd.wav",
+      "transcript_file": "transcripts/train_4ad4dd.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Emotionally Scarred",
+        "duration_seconds": 198.5,
+        "word_count": 773,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:26.869765"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_8402d8",
+      "audio_file": "audio/train_8402d8.wav",
+      "transcript_file": "transcripts/train_8402d8.txt",
+      "metadata": {
+        "artist": "Lil Baby",
+        "song": "Pure Cocaine",
+        "duration_seconds": 155.0,
+        "word_count": 645,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:33.423368"
+      },
+      "challenge_tags": [
+        "melodic",
+        "heavy_slang"
+      ]
+    },
+    {
+      "id": "train_f9038e",
+      "audio_file": "audio/train_f9038e.wav",
+      "transcript_file": "transcripts/train_f9038e.txt",
+      "metadata": {
+        "artist": "Polo G",
+        "song": "Martin and Gina",
+        "duration_seconds": 133.5,
+        "word_count": 502,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:40.792765"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_c5b416",
+      "audio_file": "audio/train_c5b416.wav",
+      "transcript_file": "transcripts/train_c5b416.txt",
+      "metadata": {
+        "artist": "J. Cole",
+        "song": "Love Yourz",
+        "duration_seconds": 29.8,
+        "word_count": 616,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:43.467582"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_7131da",
+      "audio_file": "audio/train_7131da.wav",
+      "transcript_file": "transcripts/train_7131da.txt",
+      "metadata": {
+        "artist": "J. Cole",
+        "song": "Wet Dreamz",
+        "duration_seconds": 29.8,
+        "word_count": 747,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:47.689409"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_13a023",
+      "audio_file": "audio/train_13a023.wav",
+      "transcript_file": "transcripts/train_13a023.txt",
+      "metadata": {
+        "artist": "J. Cole",
+        "song": "ATM",
+        "duration_seconds": 216.7,
+        "word_count": 641,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:35:55.121436"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_ec5061",
+      "audio_file": "audio/train_ec5061.wav",
+      "transcript_file": "transcripts/train_ec5061.txt",
+      "metadata": {
+        "artist": "Kendrick Lamar",
+        "song": "Swimming Pools",
+        "duration_seconds": 248.5,
+        "word_count": 891,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:00.935991"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_017fb1",
+      "audio_file": "audio/train_017fb1.wav",
+      "transcript_file": "transcripts/train_017fb1.txt",
+      "metadata": {
+        "artist": "Kendrick Lamar",
+        "song": "Poetic Justice",
+        "duration_seconds": 300.2,
+        "word_count": 991,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:09.437638"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_6b2e6c",
+      "audio_file": "audio/train_6b2e6c.wav",
+      "transcript_file": "transcripts/train_6b2e6c.txt",
+      "metadata": {
+        "artist": "Drake",
+        "song": "Gods Plan",
+        "duration_seconds": 29.8,
+        "word_count": 383,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:20.935235"
+      },
+      "challenge_tags": [
+        "melodic"
+      ]
+    },
+    {
+      "id": "train_dc6277",
+      "audio_file": "audio/train_dc6277.wav",
+      "transcript_file": "transcripts/train_dc6277.txt",
+      "metadata": {
+        "artist": "Drake",
+        "song": "Started From the Bottom",
+        "duration_seconds": 174.0,
+        "word_count": 486,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:28.368266"
+      },
+      "challenge_tags": [
+        "fast_flow"
+      ]
+    },
+    {
+      "id": "train_169862",
+      "audio_file": "audio/train_169862.wav",
+      "transcript_file": "transcripts/train_169862.txt",
+      "metadata": {
+        "artist": "Juice WRLD",
+        "song": "Robbery",
+        "duration_seconds": 240.5,
+        "word_count": 482,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:33.607129"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_c31617",
+      "audio_file": "audio/train_c31617.wav",
+      "transcript_file": "transcripts/train_c31617.txt",
+      "metadata": {
+        "artist": "Juice WRLD",
+        "song": "Wishing Well",
+        "duration_seconds": 194.7,
+        "word_count": 452,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:39.008888"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_e3fa8c",
+      "audio_file": "audio/train_e3fa8c.wav",
+      "transcript_file": "transcripts/train_e3fa8c.txt",
+      "metadata": {
+        "artist": "A Boogie Wit Da Hoodie",
+        "song": "Drowning",
+        "duration_seconds": 209.2,
+        "word_count": 580,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:44.899182"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
+    },
+    {
+      "id": "train_ff1d47",
+      "audio_file": "audio/train_ff1d47.wav",
+      "transcript_file": "transcripts/train_ff1d47.txt",
+      "metadata": {
+        "artist": "YNW Melly",
+        "song": "Murder on My Mind",
+        "duration_seconds": 267.8,
+        "word_count": 676,
+        "source": "auto_collect_soundcloud",
+        "collected_at": "2026-06-11T12:36:51.450609"
+      },
+      "challenge_tags": [
+        "melodic",
+        "singing"
+      ]
     }
   ]
 }

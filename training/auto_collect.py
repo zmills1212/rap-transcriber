@@ -42,6 +42,37 @@ from training.data_collector import (
 # Audio Download (SoundCloud via yt-dlp)
 # =============================================================================
 
+def _try_download(query: str, output_path: str, timeout: int = 120) -> Optional[str]:
+    """Try downloading with a yt-dlp search query. Returns path or None."""
+    out_template = output_path + ".%(ext)s"
+    cmd = [
+        "/opt/homebrew/bin/yt-dlp",
+        query,
+        "--extract-audio",
+        "--audio-format", "wav",
+        "--no-playlist",
+        "-o", out_template,
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        out_dir = Path(output_path).parent
+        for candidate in [output_path + ".wav", output_path]:
+            if Path(candidate).exists():
+                return candidate
+        for f in sorted(out_dir.glob("*.wav"), key=lambda x: x.stat().st_mtime, reverse=True):
+            return str(f)
+        if result.returncode != 0:
+            err = result.stderr[:300] if result.stderr else "Unknown error"
+            print(f"  Download error: {err}")
+        return None
+    except subprocess.TimeoutExpired:
+        print(f"  Download timed out")
+        return None
+    except FileNotFoundError:
+        print(f"  ERROR: yt-dlp not found. Install with: pip install yt-dlp")
+        return None
+
+
 def search_and_download(
     song: str,
     artist: str,
@@ -49,47 +80,26 @@ def search_and_download(
     max_duration: int = 300,
 ) -> Optional[str]:
     """
-    Search SoundCloud for a song and download audio.
+    Search for a song and download audio.
+    Tries SoundCloud first, then YouTube as fallback.
     Returns path to downloaded WAV, or None if failed.
     """
     query = f"{artist} {song}"
+
+    # Try SoundCloud first
     print(f"  Searching SoundCloud: {query}")
+    result = _try_download(f"scsearch1:{query}", output_path)
+    if result:
+        return result
 
-    out_template = output_path + ".%(ext)s"
+    # Fallback to YouTube
+    print(f"  SoundCloud failed, trying YouTube: {query}")
+    result = _try_download(f"ytsearch1:{query} official audio", output_path, timeout=180)
+    if result:
+        return result
 
-    cmd = [
-        "yt-dlp",
-        f"scsearch1:{query}",
-        "--extract-audio",
-        "--audio-format", "wav",
-        "--no-playlist",
-        "-o", out_template,
-    ]
-
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
-
-        # Find the downloaded wav file
-        out_dir = Path(output_path).parent
-        for candidate in [output_path + ".wav", output_path]:
-            if Path(candidate).exists():
-                return candidate
-
-        # Search directory for newest wav
-        for f in sorted(out_dir.glob("*.wav"), key=lambda x: x.stat().st_mtime, reverse=True):
-            return str(f)
-
-        if result.returncode != 0:
-            err = result.stderr[:300] if result.stderr else "Unknown error"
-            print(f"  Download error: {err}")
-        return None
-
-    except subprocess.TimeoutExpired:
-        print(f"  Download timed out")
-        return None
-    except FileNotFoundError:
-        print(f"  ERROR: yt-dlp not found. Install with: pip install yt-dlp")
-        return None
+    print(f"  Both sources failed for: {query}")
+    return None
 
 
 def convert_to_wav(input_path: str, output_path: str) -> bool:

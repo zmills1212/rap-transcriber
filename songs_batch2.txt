@@ -1,0 +1,38 @@
+# Batch 2 — Yung Bans, Lil Yachty, Yeat, Future
+# Format: artist - song | tag1 tag2
+
+# Yung Bans
+Yung Bans - Lonely | melodic heavy_slang
+Yung Bans - 4Tspoon | heavy_slang ad_libs
+Yung Bans - Ridin | heavy_slang melodic
+Yung Bans - Out My Face | heavy_slang ad_libs
+Yung Bans - Ready Set Go | heavy_slang fast_flow
+Yung Bans - SOS | melodic heavy_slang autotune
+Yung Bans - Birthday | melodic heavy_slang
+
+# Lil Yachty
+Lil Yachty - One Night | melodic autotune heavy_slang
+Lil Yachty - Minnesota | melodic autotune heavy_slang ad_libs
+Lil Yachty - Broccoli | melodic heavy_slang
+Lil Yachty - iSpy | melodic autotune
+Lil Yachty - Peek A Boo | heavy_slang ad_libs fast_flow
+Lil Yachty - Get Dripped | heavy_slang ad_libs autotune
+Lil Yachty - Poland | autotune melodic mumble
+
+# Yeat
+Yeat - Sorry Bout That | mumble heavy_slang autotune
+Yeat - Get Busy | mumble heavy_slang fast_flow
+Yeat - Poppin | mumble heavy_slang ad_libs
+Yeat - Money So Big | mumble heavy_slang autotune
+Yeat - Turban | mumble heavy_slang
+Yeat - Tonka | mumble heavy_slang ad_libs
+Yeat - Lying 4 Fun | mumble autotune heavy_slang
+
+# Future
+Future - March Madness | heavy_slang mumble autotune
+Future - Codeine Crazy | heavy_slang mumble autotune melodic
+Future - Stick Talk | heavy_slang ad_libs
+Future - Wicked | heavy_slang mumble
+Future - Thought It Was a Drought | heavy_slang accent_dialect
+Future - Low Life | heavy_slang autotune melodic
+Future - Commas | heavy_slang fast_flow ad_libs

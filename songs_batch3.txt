@@ -1,0 +1,48 @@
+# Batch 3 — Popular but hard to transcribe
+# Criteria: well-known (accurate Genius lyrics), difficult delivery
+# Format: artist - song | tag1 tag2
+
+# Young Thug — notoriously hard to understand, massive catalog
+Young Thug - Wyclef Jean | mumble heavy_slang autotune
+Young Thug - Halftime | mumble heavy_slang ad_libs
+Young Thug - Stoner | mumble heavy_slang autotune melodic
+Young Thug - Check | mumble heavy_slang ad_libs
+Young Thug - With That | mumble heavy_slang
+Young Thug - Danny Glover | mumble heavy_slang ad_libs
+Young Thug - Lifestyle | mumble heavy_slang autotune
+
+# Chief Keef — heavy Chicago slang, slurred delivery
+Chief Keef - Faneto | heavy_slang accent_dialect ad_libs loud_beat
+Chief Keef - Earned It | heavy_slang mumble accent_dialect
+Chief Keef - Hate Bein Sober | heavy_slang mumble
+Chief Keef - Citgo | heavy_slang mumble melodic
+
+# Desiigner — famously unintelligible
+Desiigner - Panda | mumble heavy_slang fast_flow
+Desiigner - Timmy Turner | mumble heavy_slang autotune
+
+# Lil Baby — Atlanta slang, rapid mumble
+Lil Baby - Close Friends | heavy_slang mumble accent_dialect
+Lil Baby - Drip Too Hard | heavy_slang mumble autotune
+Lil Baby - Woah | heavy_slang ad_libs accent_dialect
+Lil Baby - Sum 2 Prove | heavy_slang fast_flow accent_dialect
+
+# Gunna — melodic mumble, heavy slang
+Gunna - Pushin P | mumble heavy_slang autotune
+Gunna - Top Floor | mumble heavy_slang melodic
+Gunna - Drip or Drown | mumble heavy_slang autotune melodic
+
+# Playboi Carti — baby voice, ad-libs, minimal lyrics
+Playboi Carti - Woah | mumble ad_libs heavy_slang
+Playboi Carti - Flatbed Freestyle | mumble ad_libs heavy_slang autotune
+Playboi Carti - Shoota | mumble ad_libs melodic
+
+# 21 Savage — deep Atlanta drawl, monotone
+21 Savage - No Heart | heavy_slang accent_dialect
+21 Savage - Bank Account | heavy_slang accent_dialect
+21 Savage - X | heavy_slang accent_dialect fast_flow
+
+# Migos — triplet flow, overlapping ad-libs
+Migos - T-Shirt | heavy_slang ad_libs fast_flow
+Migos - Slippery | heavy_slang ad_libs fast_flow
+Migos - Deadz | heavy_slang ad_libs mumble

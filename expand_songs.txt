@@ -1,0 +1,52 @@
+# Melodic / Singing Rap
+Lil Baby - Woah | melodic ad_libs
+Lil Baby - Sum 2 Prove | melodic fast_flow
+Polo G - Pop Out | melodic
+Polo G - Rapstar | melodic singing
+Rod Wave - Heart On Ice | singing melodic
+Rod Wave - Tombstone | singing melodic
+Lil Durk - All My Life | melodic singing
+Lil Durk - Laugh Now Cry Later | melodic
+
+# Southern / Hard Delivery
+Moneybagg Yo - Said Sum | heavy_slang accent_dialect
+Moneybagg Yo - Wockesha | heavy_slang melodic
+EST Gee - 5500 Degrees | heavy_slang fast_flow
+NLE Choppa - Shotta Flow | fast_flow heavy_slang
+NLE Choppa - Walk Em Down | fast_flow heavy_slang
+Megan Thee Stallion - Savage | fast_flow heavy_slang
+Megan Thee Stallion - Body | fast_flow heavy_slang
+
+# Mumble / Autotune
+Future - Mask Off | autotune mumble
+Young Thug - Best Friend | mumble autotune ad_libs
+Lil Uzi Vert - XO Tour Llif3 | melodic mumble
+Lil Uzi Vert - Money Longer | mumble fast_flow
+Playboi Carti - Wokeuplikethis | mumble ad_libs
+
+# Technical / Fast Flow
+JID - Surround Sound | fast_flow accent_dialect
+J. Cole - Middle Child | fast_flow
+Denzel Curry - Ultimate | fast_flow heavy_slang
+Denzel Curry - Clout Cobain | fast_flow
+Kendrick Lamar - HUMBLE | fast_flow accent_dialect
+Kendrick Lamar - Money Trees | fast_flow
+
+# West Coast
+Roddy Ricch - The Box | melodic accent_dialect
+Roddy Ricch - High Fashion | melodic
+YG - Big Bank | accent_dialect heavy_slang
+Blueface - Thotiana | accent_dialect heavy_slang
+
+# Drill
+Pop Smoke - Dior | accent_dialect heavy_slang
+Pop Smoke - Welcome to the Party | accent_dialect fast_flow
+Fivio Foreign - Big Drip | accent_dialect fast_flow
+
+# Misc
+DaBaby - Suge | fast_flow heavy_slang
+Lil Nas X - Panini | melodic singing
+Jack Harlow - Whats Poppin | fast_flow
+Cardi B - Bodak Yellow | fast_flow accent_dialect heavy_slang
+Travis Scott - SICKO MODE | autotune melodic
+Travis Scott - goosebumps | autotune melodic

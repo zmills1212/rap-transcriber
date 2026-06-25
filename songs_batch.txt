@@ -1,0 +1,34 @@
+# Rap Transcriber — Batch Collection List
+# Format: artist - song | tag1 tag2
+# Tags: heavy_slang, fast_flow, melodic, mumble, ad_libs, autotune, accent_dialect, clean_delivery, loud_beat
+
+# Melodic / Autotune
+Lil Uzi Vert - XO Tour Llif3 | melodic autotune heavy_slang
+Juice WRLD - Lucid Dreams | melodic autotune
+Young Thug - Best Friend | melodic autotune heavy_slang ad_libs
+Lil Tecca - Ransom | melodic fast_flow
+Gunna - Drip Too Hard | melodic autotune heavy_slang
+
+# Heavy Slang / Regional
+21 Savage - A Lot | heavy_slang accent_dialect
+Gucci Mane - Lemonade | heavy_slang accent_dialect ad_libs
+Future - Mask Off | heavy_slang mumble
+Migos - Bad and Boujee | heavy_slang ad_libs fast_flow
+Key Glock - Dough | heavy_slang accent_dialect
+
+# Fast Flow
+Ski Mask the Slump God - Catch Me Outside | fast_flow heavy_slang ad_libs
+JID - Surpass | fast_flow clean_delivery
+Rico Nasty - Smack a Bitch | fast_flow heavy_slang loud_beat
+Denzel Curry - Ultimate | fast_flow loud_beat
+
+# Mumble / Experimental
+Playboi Carti - Magnolia | mumble ad_libs heavy_slang
+Young Thug - Digits | mumble heavy_slang autotune
+Lil Baby - Freestyle | mumble heavy_slang
+Chief Keef - Love Sosa | mumble heavy_slang accent_dialect
+
+# Clean Delivery (good baseline samples)
+J Cole - No Role Modelz | clean_delivery
+Kendrick Lamar - HUMBLE | clean_delivery loud_beat
+Drake - God's Plan | clean_delivery melodic

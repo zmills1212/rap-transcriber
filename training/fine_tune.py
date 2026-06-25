@@ -278,7 +278,7 @@ def train(
         label_smoothing_factor=0,
 
         # Memory optimization
-        gradient_checkpointing=True,
+        gradient_checkpointing=False,
         fp16=False,
 
         # Evaluation & saving
