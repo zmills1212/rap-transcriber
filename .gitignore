@@ -35,6 +35,7 @@ Untitled*.ipynb
 
 # Generated pipeline reports (regenerated each run)
 training_data/*_report.json
+training_data/model_filter_predictions.json
 
 # Outputs / Reports
 evaluation/reports/*.json

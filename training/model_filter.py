@@ -30,6 +30,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 TRAINING_DATA = PROJECT_ROOT / "training_data"
 MANIFEST_PATH = TRAINING_DATA / "segment_manifest.json"
 ADAPTER_DIR = PROJECT_ROOT / "training" / "fine_tuned" / "lora_adapter"
+PREDICTION_CACHE = TRAINING_DATA / "model_filter_predictions.json"
 
 
 def normalize_for_comparison(text: str) -> str:
@@ -178,34 +179,54 @@ def run_filter(
     manifest_path: Path,
     threshold: float = 0.08,
     use_baseline: bool = False,
+    fresh: bool = False,
 ):
     """
     Run model-based quality filter on all segments.
-    
+
     Args:
         manifest_path: Path to segment manifest
         threshold: Combined score below this = bad segment
         use_baseline: Use baseline Whisper instead of fine-tuned
+        fresh: Ignore the prediction cache and re-transcribe everything
     """
     with open(manifest_path) as f:
         manifest = json.load(f)
-    
+
     segments = manifest if isinstance(manifest, list) else manifest.get('segments', [])
     total = len(segments)
     print(f"  Total segments: {total}")
-    
-    # Load model
-    model, processor, device = load_model(use_baseline=use_baseline)
-    
+
+    # Resumable prediction cache: transcription is the expensive step, so cache
+    # each segment's model output keyed by audio path. A re-run (after an
+    # interruption, or to try a different threshold) reuses cached predictions,
+    # and the model is loaded lazily so a fully-cached run skips loading it.
+    # NOTE: the cache assumes the same adapter — pass fresh=True after retraining.
+    cache = {}
+    if not fresh and PREDICTION_CACHE.exists():
+        try:
+            cache = json.loads(PREDICTION_CACHE.read_text())
+            print(f"  Loaded {len(cache)} cached predictions (resume)")
+        except Exception:
+            cache = {}
+
+    _model = {}  # lazy holder so a fully-cached run never loads the model
+    def _predict(audio_path):
+        if not _model:
+            _model['m'], _model['p'], _model['d'] = load_model(use_baseline=use_baseline)
+        return transcribe_segment(_model['m'], _model['p'], _model['d'], audio_path)
+
     results = []
     good = 0
     bad = 0
     repetitive = 0
-    
+    cache_hits = 0
+    new_preds = 0
+
     for i, seg in enumerate(segments):
         audio_path = seg.get('audio_path', seg.get('audio', ''))
         lyrics = seg.get('lyrics', seg.get('text', ''))
-        
+
         if not Path(audio_path).exists():
             results.append({
                 'index': i, 'status': 'missing',
@@ -213,7 +234,7 @@ def run_filter(
             })
             bad += 1
             continue
-        
+
         if not lyrics or len(lyrics.strip()) < 10:
             results.append({
                 'index': i, 'status': 'empty_lyrics',
@@ -221,9 +242,19 @@ def run_filter(
             })
             bad += 1
             continue
-        
-        # Transcribe
-        prediction = transcribe_segment(model, processor, device, audio_path)
+
+        # Transcribe (reuse cached prediction when available)
+        cached = cache.get(audio_path)
+        if cached is not None and not cached.startswith('[ERROR'):
+            prediction = cached
+            cache_hits += 1
+        else:
+            prediction = _predict(audio_path)
+            if not prediction.startswith('[ERROR'):
+                cache[audio_path] = prediction
+                new_preds += 1
+                if new_preds % 25 == 0:
+                    PREDICTION_CACHE.write_text(json.dumps(cache))
         scores = combined_score(prediction, lyrics)
         
         status = 'good' if scores['combined'] >= threshold else 'bad'
@@ -246,7 +277,11 @@ def run_filter(
         
         if (i + 1) % 25 == 0:
             print(f"  [{i+1}/{total}] good={good} bad={bad} repetitive={repetitive}")
-    
+
+    # Persist prediction cache for resumability / threshold experiments.
+    PREDICTION_CACHE.write_text(json.dumps(cache))
+    print(f"  Predictions: {cache_hits} reused, {new_preds} new")
+
     # Final summary
     bad_indices = [r['index'] for r in results if r['status'] in ('bad', 'missing', 'empty_lyrics')]
     
@@ -309,6 +344,8 @@ def main():
                         help='Use baseline Whisper instead of fine-tuned model')
     parser.add_argument('--manifest', type=str, default=None,
                         help='Path to segment_manifest.json')
+    parser.add_argument('--fresh', action='store_true',
+                        help='Ignore the prediction cache and re-transcribe all segments')
     args = parser.parse_args()
     
     manifest_path = Path(args.manifest) if args.manifest else MANIFEST_PATH
@@ -325,7 +362,7 @@ def main():
     print(f"  Model:      {'baseline' if args.use_baseline else 'fine-tuned'}")
     print()
     
-    report = run_filter(manifest_path, threshold=args.threshold, use_baseline=args.use_baseline)
+    report = run_filter(manifest_path, threshold=args.threshold, use_baseline=args.use_baseline, fresh=args.fresh)
     
     print(f"\n{'=' * 60}")
     print(f"  FILTER RESULTS")
