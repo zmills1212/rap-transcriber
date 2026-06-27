@@ -212,6 +212,7 @@ def train(
     warmup_ratio: float = 0.1,
     eval_steps: int = 50,
     early_stopping_patience: int = 5,
+    resume: bool = False,
 ):
     """Run fine-tuning with regularization."""
 
@@ -345,7 +346,10 @@ def train(
     print("You can also stop manually with Ctrl+C (progress saves).\n")
 
     try:
-        trainer.train()
+        _resume = bool(resume and list(OUTPUT_DIR.glob("checkpoint-*")))
+        if _resume:
+            print(f"  Resuming from latest checkpoint in {OUTPUT_DIR}")
+        trainer.train(resume_from_checkpoint=_resume or None)
     except KeyboardInterrupt:
         print("\n\nTraining interrupted! Saving current state...")
 
@@ -508,6 +512,8 @@ if __name__ == "__main__":
     parser.add_argument("--eval-steps", type=int, default=25)
     parser.add_argument("--evaluate", action="store_true")
     parser.add_argument("--transcribe", type=str, default=None)
+    parser.add_argument("--resume", action="store_true",
+                        help="Resume from the latest checkpoint in training/fine_tuned/")
 
     args = parser.parse_args()
 
@@ -527,4 +533,5 @@ if __name__ == "__main__":
             label_smoothing=args.label_smoothing,
             early_stopping_patience=args.patience,
             eval_steps=args.eval_steps,
+            resume=args.resume,
         )
