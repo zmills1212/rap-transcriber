@@ -327,6 +327,10 @@ def remove_bad_segments(manifest_path: Path, bad_indices: list):
     else:
         output = dict(manifest)
         output['segments'] = cleaned
+        output['total_segments'] = len(cleaned)
+        scored = [s.get('alignment_score', 0.0) for s in cleaned]
+        if scored:
+            output['mean_alignment_score'] = round(sum(scored) / len(scored), 4)
     
     with open(manifest_path, 'w') as f:
         json.dump(output, f, indent=2)
